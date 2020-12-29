@@ -1,0 +1,6 @@
+<resources>
+    <string name="message_start_record">开始录像</string>
+    <string name="message_stop_record">录像已结束</string>
+
+    <string name="message_start_live">远程指挥中</string>
+</resources>

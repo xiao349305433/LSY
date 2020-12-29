@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="glass_icon_width">126dp</dimen>
+    <dimen name="glass_status_timer_top">8dp</dimen>
+    <dimen name="glass_status_border_width">56dp</dimen>
+    <dimen name="glass_status_border_height">10dp</dimen>
+    <dimen name="glass_status_border_radius">10dp</dimen>
+    <dimen name="glass_status_border_stroke_width">2dp</dimen>
+    <dimen name="glass_status_round_width">6dp</dimen>
+    <dimen name="glass_status_round_height">6dp</dimen>
+
+    <dimen name="glass_icon_padding_top">3dp</dimen>
+    <dimen name="glass_icon_padding_left">10dp</dimen>
+    <dimen name="glass_icon_margin_right">3dp</dimen>
+    <dimen name="glass_imu_margin_top">60dp</dimen>
+    <dimen name="glass_status_round_margin_left">8dp</dimen>
+    <dimen name="glass_status_round_text_margin_left">6dp</dimen>
+    <dimen name="glass_status_round_text_margin_right">5dp</dimen>
+    <dimen name="glass_status_bar_margin">80dp</dimen>
+    <dimen name="glass_status_text_size">18dp</dimen>
+    <dimen name="glass_status_live_height">36dp</dimen>
+    <dimen name="glass_status_round_image_width">7dp</dimen>
+    <dimen name="glass_status_round_image_height">7dp</dimen>
+
+    <dimen name="glass_screen_width">1280px</dimen>
+    <dimen name="glass_screen_height">720px</dimen>
+</resources>

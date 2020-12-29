@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/status_bar_record"
+    android:layout_width="@dimen/glass_icon_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_green_border"
+    android:paddingLeft="@dimen/glass_icon_padding_left"
+    android:paddingTop="@dimen/glass_icon_padding_top"
+    android:paddingBottom="@dimen/glass_icon_padding_top"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <com.rokid.glass.videorecorder.view.TimerView
+        android:id="@+id/status_bar_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/glass_status_round_text_margin_left"
+        android:layout_marginRight="@dimen/glass_status_round_text_margin_right"
+        android:format="00:00:00"
+        android:textColor="@color/glass_record_color"
+        android:textSize="@dimen/glass_status_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/status_bar_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/status_bar_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_record"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.rokid.glass.videorecorder.view.BreathingView
+        android:id="@+id/status_bar_live_round"
+        android:layout_width="@dimen/glass_status_round_image_width"
+        android:layout_height="@dimen/glass_status_round_image_height"
+        android:background="@drawable/round_green"
+        app:layout_constraintLeft_toRightOf="@+id/status_bar_timer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/glass_record_r_color" />
+    <size
+        android:width="@dimen/glass_status_round_width"
+        android:height="@dimen/glass_status_round_height" />
+</shape>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 矩形圆角+左右两边为一个圆弧 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="true">
+
+    <size
+        android:width="@dimen/glass_status_border_width"
+        android:height="@dimen/glass_status_border_height" />
+
+    <stroke
+        android:width="@dimen/glass_status_border_stroke_width"
+        android:color="@color/common_blue" />
+
+    <corners android:radius="@dimen/glass_status_border_radius" />
+</shape>
