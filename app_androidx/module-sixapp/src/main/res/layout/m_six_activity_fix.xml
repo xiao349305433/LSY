@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#363A53">
+    <include layout="@layout/base_toolbar" />
+    <ScrollView
+        android:id="@+id/test_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="125dp"
+                    android:background="#365D9E"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前物联SN"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="10dp"
+
+                        >
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/drawer_edit_layout_shape"
+                        >
+
+                        <EditText
+                            android:id="@+id/test_edit_search"
+                            android:layout_width="180dp"
+                            android:layout_height="30dp"
+                            android:textColor="@color/white"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:hint="请从搜索列表中选择"
+                            android:textColorHint="@color/white"
+                            >
+                        </EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/test_reset_clearlist_tv"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:textColor="@color/white"
+                            android:text="重新搜索"
+                            android:background="@drawable/param_tv_shape"
+                            android:gravity="center"
+                            ></TextView>
+                        <TextView
+                            android:id="@+id/test_reset_clear_tv"
+                            android:layout_width="80dp"
+                            android:layout_height="32dp"
+                            android:textColor="@color/white"
+                            android:text="重连蓝牙"
+                            android:background="@drawable/param_tv_shape"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            ></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    ></View>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="125dp"
+                    android:background="#365D9E"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="附近蓝牙"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        ></TextView>
+                    <ImageView
+                        android:id="@+id/test_blue_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:src="@drawable/sousuo"
+                        >
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/test_blue_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="搜索中"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        ></TextView>
+                </LinearLayout>
+            </LinearLayout>
+<LinearLayout
+    android:id="@+id/test_blue_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginTop="15dp"
+    android:visibility="visible"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/blue_bg"
+        android:text="搜索列表"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/test_blue_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/connect_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:visibility="gone"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+        <TextView
+            android:id="@+id/fix_typename"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="芯片"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:background="@color/blue_bg"
+            android:textSize="20sp"
+            ></TextView>
+        <TextView
+            android:id="@+id/blue_close_tv"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="关闭退出"
+            android:textColor="@color/white"
+            android:background="@color/blue_bg"
+            android:gravity="center"
+            android:textSize="16sp"
+            ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="民     用"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="公     用"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@color/white"
+            ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="产品形式"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            ></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="105dp"
+                android:layout_height="32dp"
+                android:text="远传物联网端"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:background="@drawable/drawer_test_tv_stroke_blue"
+                android:textColor="@color/blue_bg"
+                ></TextView>
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="32dp"
+                android:text="第三方表号接入"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        >
+
+        <View
+            android:id="@+id/centerView"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"></View>
+
+        <LinearLayout
+            android:id="@+id/fix_tu2_layout"
+            android:layout_width="0dp"
+            android:layout_height="187dp"
+            android:background="@drawable/drawer_test_layout_shape"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/centerView"
+            app:layout_constraintLeft_toLeftOf="@id/centerView"
+            android:layout_margin="10dp"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.45"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="读取"></TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/test_tu2"></ImageView>
+            <ImageView
+                android:id="@+id/fix_tu2_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-25dp"
+                android:background="@drawable/drawer_fix_round"
+                ></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="模块配置"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fix_tu3_layout"
+            android:layout_width="0dp"
+            android:layout_height="187dp"
+            android:background="@drawable/drawer_test_layout_shape"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/centerView"
+            app:layout_constraintRight_toLeftOf="@id/centerView"
+            android:layout_margin="10dp"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.45"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="配置"></TextView>
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/test_tu4"></ImageView>
+            <ImageView
+                android:id="@+id/fix_tu3_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-25dp"
+                android:background="@drawable/drawer_fix_round"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="性能验证"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fix_tu1_layout"
+            android:layout_width="0dp"
+            android:layout_height="187dp"
+            android:background="@drawable/drawer_test_layout_shape"
+            android:orientation="vertical"
+            app:layout_constraintRight_toLeftOf="@id/centerView"
+            app:layout_constraintBottom_toTopOf="@id/centerView"
+            android:layout_margin="10dp"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.45"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="配置"></TextView>
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/test_tu1"></ImageView>
+            <ImageView
+                android:id="@+id/fix_tu1_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-25dp"
+                android:background="@drawable/drawer_fix_round"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="物联调试"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fix_tu4_layout"
+            android:layout_width="0dp"
+            android:layout_height="187dp"
+            android:background="@drawable/drawer_test_layout_shape"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@id/centerView"
+            app:layout_constraintTop_toBottomOf="@id/centerView"
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.45"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="检查"></TextView>
+
+            <TextView
+                android:id="@+id/fix_tu4_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="不通过"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@mipmap/fix_tu4"></TextView>
+            <ImageView
+                android:id="@+id/fix_tu4_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-25dp"
+                android:background="@drawable/drawer_fix_round"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="调试结果"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

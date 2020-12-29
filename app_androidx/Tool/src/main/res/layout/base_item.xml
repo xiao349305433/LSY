@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="165dp"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_base_sn"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="10607F5D904B9AAB"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_base_state"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/v_dot0"
+                style="@style/dot_style"
+                android:layout_gravity="center"
+                android:background="@drawable/dot_normal" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="正常"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_newuploadtime"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="8分钟前"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_ditu"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/base_ditu"
+            android:gravity="center"
+            android:text="地图"
+            android:textColor="#e2cbaa"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:gravity="center|left" >
+
+        <ImageView
+            android:id="@+id/iv_yitaiwang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/queding" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="以太网"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_3g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/guanbi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="3G"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:id="@+id/tv_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="华旭大门口"
+            android:background="@drawable/ditu_radius"
+            android:textSize="12sp"
+            android:textColor="#fff"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="名称"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

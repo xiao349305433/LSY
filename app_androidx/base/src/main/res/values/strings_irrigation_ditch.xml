@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 百度渠道号 -->
+    <!-- 给翰林的版本 -->
+	<!--<string name="my_irrigation_ditch">翰林版测试</string>-->
+    <!-- 开发过程中的的版本 -->
+ <!--<string name="base_my_irrigation_ditch">日常调试版</string>-->
+    <!-- 新框架 -->
+
+    <!--     线上版本-->
+<!--<string name="my_irrigation_ditch">jrt</string>-->
+ <!--     线上版本-->
+<!-- <string name="my_irrigation_ditch">现金宝 2015-08-06</string> -->
+
+
+    <!-- bugly渠道号  -->
+<!--<string name="base_my_bugly_ditch">新框架</string>-->
+    <!--<string name="base_my_bugly_ditch">测试</string>-->
+<!--<string name="base_my_bugly_ditch">生产</string>-->
+
+    <!-- bugly版本号 -->
+
+</resources>

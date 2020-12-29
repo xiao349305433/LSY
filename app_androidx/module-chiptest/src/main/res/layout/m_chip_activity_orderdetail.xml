@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp">
+
+        <TextView
+            android:id="@+id/OrderTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单时间：" />
+
+        <TextView
+            android:id="@+id/detailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货地址：" />
+
+        <TextView
+            android:id="@+id/receiveName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人姓名：" />
+
+        <TextView
+            android:id="@+id/receiveNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人手机号：" />
+
+        <TextView
+            android:id="@+id/acceptPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="厂家手机号:" />
+
+        <TextView
+            android:id="@+id/manufacturerContacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="厂家联系人:" />
+
+        <TextView
+            android:id="@+id/deliveryTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发货时间:" />
+
+        <TextView
+            android:id="@+id/trackingCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递公司:" />
+
+        <TextView
+            android:id="@+id/trackingNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运单号:" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/item1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/icon1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wuliansn_tubiao1" />
+
+
+        <ImageView
+            android:id="@+id/logo1_1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/l_loushanyun_lsy_1" />
+
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="8dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/logo1_1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/icon1_1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="娄山云1号模组质检"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LSY-M01(物联网家用集中器)"
+                android:textColor="#666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mo1_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量：0个"
+                android:textSize="12sp"></TextView>
+
+            <TextView
+                android:id="@+id/mo1_zhinum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已质检：0个"
+                android:textColor="#2762ae"
+                android:textSize="12sp"></TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mo1_state"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/logo1_1"
+            android:src="@drawable/wzj"></ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wuliansn_tubiao2" />
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/l_loushanyun_lsy_2" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="8dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/logo2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/icon2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="娄山云2号模组质检"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LSY-M02(物联网家用一对一)"
+                android:textColor="#666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mo2_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量：0个"
+                android:textSize="12sp"></TextView>
+
+            <TextView
+                android:id="@+id/mo2_zhinum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已质检：0个"
+                android:textColor="#2762ae"
+                android:textSize="12sp"></TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mo2_state"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/logo2"
+            android:src="@drawable/wzj"></ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wuliansn_tubiao3" />
+
+        <ImageView
+            android:id="@+id/logo3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/l_loushanyun_lsy_3" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/icon3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="娄山云3号模组质检"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LSY-M03(家用第三方总线)"
+                android:textColor="#666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mo3_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量：0个"
+                android:textSize="12sp"></TextView>
+
+            <TextView
+                android:id="@+id/mo3_zhinum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已质检：0个"
+                android:textColor="#2762ae"
+                android:textSize="12sp"></TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mo3_state"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/logo3"
+            android:src="@drawable/wzj"></ImageView>
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="8dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/logo3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/item4_simu"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/icon4_simu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wuliansn_tubiao4" />
+
+        <ImageView
+            android:id="@+id/logo4_simu"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lsy_mo4" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="8dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/logo4_simu"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/icon4_simu"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="娄山云4号模组质检"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LSY-M04(物联网公用一对一)"
+                android:textColor="#666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mo4_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量：0个"
+                android:textSize="12sp"></TextView>
+
+            <TextView
+                android:id="@+id/mo4_zhinum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已质检：0个"
+                android:textColor="#2762ae"
+                android:textSize="12sp"></TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mo4_state"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/logo4_simu"
+            android:src="@drawable/wzj"></ImageView>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+    >
+
+<!--    <group android:checkableBehavior="single"-->
+<!--        >-->
+<!--&lt;!&ndash;        <item&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/ic_main_shuiwu"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:checked="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:icon="@drawable/m_five_water"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:title="水务物联网" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <item&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/ic_main_phone"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:icon="@drawable/m_five_mobile_phone"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:title="手机采集" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <item&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/ic_main_manage"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:icon="@drawable/m_five_analysis"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:title="水务管理" />&ndash;&gt;-->
+
+<!--        <item-->
+<!--            android:id="@+id/ic_main_change"-->
+<!--            android:icon="@drawable/m_six_settings_black_24dp"-->
+<!--            android:title="退出账号"-->
+<!--            />-->
+
+<!--&lt;!&ndash;        <item&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/ic_main_fenxi"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:icon="@drawable/m_five_administration"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:title="智能分析" />&ndash;&gt;-->
+<!--    </group>-->
+
+<!--    <item android:title="设置选项">-->
+<!--        <menu>-->
+
+<!--        </menu>-->
+<!--    </item>-->
+
+</menu>

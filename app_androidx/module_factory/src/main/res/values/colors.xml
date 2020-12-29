@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主色调 -->
+    <color name="gray">#c0c0c0</color><!-- 灰色 -->
+    <!-- 灰色 -->
+    <!-- 浅灰色 -->
+    <!-- 浅灰色 -->
+    <color name="white">#ffffff</color>    <!-- 白色 -->
+    <!-- 蓝色 -->
+    <color name="black">#000000</color>
+    <!-- 录音文件标题颜色 -->
+    <!-- 录音波标题背景颜色 -->
+    <!-- 录音波背景颜色 -->
+    <!-- 我的录音布局背景色 -->
+    <!-- <color name="pickerview_bg_topbar">#FFFFFF</color> -->
+
+    <color name="font_common_1">#424242</color>
+	<color name="font_common_2">#a1a1a1</color>
+	<color name="font_blue">#42369a</color>
+
+    <color name="commom_background">#f3f3f3</color>
+    <color name="colorWhite1">#ffffff</color>
+
+</resources>

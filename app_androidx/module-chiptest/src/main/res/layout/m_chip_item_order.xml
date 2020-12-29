@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_linear"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="140dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/base_order_blue"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ddh"
+            ></ImageView>
+        <TextView
+            android:id="@+id/order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单号 :LSY123456789"
+            android:textColor="@color/base_item_blue"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            ></TextView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/order_company"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="服务企业 ：科技有限公司"
+        android:layout_marginStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        ></TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray"
+        ></View>
+    <TextView
+        android:id="@+id/order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="订单时间 ：2019-10-10 10：10：10"
+        android:layout_marginStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        ></TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray"
+        ></View>
+    <TextView
+        android:id="@+id/order_mo"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="LSY-MO1(0) LSY-MO2(0) LSY-MO3(0) LSY-MO4(0)"
+        android:layout_marginStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        ></TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray"
+        android:layout_marginBottom="10dp"
+        ></View>
+</LinearLayout>
+    <ImageView
+        android:id="@+id/order_state"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:src="@drawable/wzj"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+
+        ></ImageView>
+</RelativeLayout>

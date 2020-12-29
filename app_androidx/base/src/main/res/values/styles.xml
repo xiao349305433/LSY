@@ -1,0 +1,54 @@
+<resources>
+    <!--这里面写跟整体样式有关的style-->
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/base_Q1</item>
+        <item name="colorPrimaryDark">@color/base_H</item>
+        <item name="colorAccent">@color/base_Q1</item>
+    </style>
+
+    <style name="BaseAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <style name="BaseAppTheme.NoActionBarNoTrans">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <!--相册选择的主题-->
+    <style name="BaseMyMatisse" parent="Matisse.Zhihu">
+        <item name="colorPrimary">@color/base_Q1</item>
+        <item name="colorPrimaryDark">@color/base_H</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <!--裁剪图片的主题-->
+    <style name="BaseAppTheme.Button.Borderless" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">#FFFFFB</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="BaseAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="BaseAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- 默认旋转加载进度 -->
+    <style name="base_Progress_Pull_List">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/base_progress_circle</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:minWidth">26dip</item>
+        <item name="android:maxWidth">26dip</item>
+        <item name="android:minHeight">26dip</item>
+        <item name="android:maxHeight">26dip</item>
+    </style>
+
+</resources>

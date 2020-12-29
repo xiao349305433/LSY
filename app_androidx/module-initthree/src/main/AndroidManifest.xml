@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wu.loushanyun.com.module_initthree">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application android:theme="@style/BaseAppTheme.NoActionBar">
+
+        <activity
+            android:name=".v.activity.ReadActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.MCchushihuaActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.MCchushihuaResultActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.ThirdReadActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.ThirdTestNewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+    </application>
+</manifest>

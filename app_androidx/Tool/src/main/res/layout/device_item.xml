@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chuanganqibeijing"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@null"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:id="@+id/tv_wulian_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="01561117C6CA0EBF"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="0dp"
+                android:orientation="horizontal" >
+
+                <View
+                    android:id="@+id/v_dot0"
+                    style="@style/dot_style"
+                    android:layout_gravity="center"
+                    android:background="@drawable/dot_timeout" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="超时未上报"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_newuploadtime"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="8分钟前"
+                android:textColor="#000099"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:id="@+id/tv_loraTxPower"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="功率：20dBM"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_band"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="频段：SE470MHz"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.2"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tvfasongpinlv"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="发送频率："
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_equipmentInterval"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_toRightOf="@id/tvfasongpinlv"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="24小时"
+                android:textColor="#f00"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_dump_energy"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/battery_empty"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:padding="3dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/progressbar1"
+            android:visibility="gone" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:id="@+id/tv_snr"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="SNR：11.5"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_rssi"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="RSSI：-50.00"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_sf"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="扩频：SF9"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:id="@+id/tv_productForm"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="产品形式：工业水表"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_hardware_version"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="版本：1.2.0"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_sensingSignal"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="传感信号：TTL"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="1dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_marginLeft="3dp"
+            android:background="@null"
+             >
+
+            <Button
+                android:id="@+id/btn_ditu"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/ditu_radius"
+                android:gravity="center"
+                android:text="地图"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btn_ditu"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="华旭大门口"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:visibility="gone"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_tags"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="设备名称"
+                android:textSize="14sp" />
+            
+            <TextView
+                android:id="@+id/tv_pnn"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:text=""
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

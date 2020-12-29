@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.flyco.roundview.RoundTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="哈哈哈哈"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#3ca9ea"
+        app:rv_strokeWidth="4dp"
+        app:rv_cornerRadius="4dp"
+        app:rv_strokeColor="#3ca9ea" />
+
+
+    <!--&lt;!&ndash; 圆角矩形背景色 &ndash;&gt;-->
+<!--<attr name="rv_backgroundColor" format="color"/>-->
+    <!--&lt;!&ndash; 圆角矩形背景色press &ndash;&gt;-->
+<!--<attr name="rv_backgroundPressColor" format="color"/>-->
+    <!--&lt;!&ndash; 圆角弧度,单位dp&ndash;&gt;-->
+<!--<attr name="rv_cornerRadius" format="dimension"/>-->
+    <!--&lt;!&ndash; 圆角弧度,单位dp&ndash;&gt;-->
+<!--<attr name="rv_strokeWidth" format="dimension"/>-->
+    <!--&lt;!&ndash; 圆角边框颜色&ndash;&gt;-->
+<!--<attr name="rv_strokeColor" format="color"/>-->
+    <!--&lt;!&ndash; 圆角边框颜色press &ndash;&gt;-->
+<!--<attr name="rv_strokePressColor" format="color"/>-->
+    <!--&lt;!&ndash; 文字颜色press&ndash;&gt;-->
+<!--<attr name="rv_textPressColor" format="color"/>-->
+    <!--&lt;!&ndash; 圆角弧度是高度一半&ndash;&gt;-->
+<!--<attr name="rv_isRadiusHalfHeight" format="boolean"/>-->
+    <!--&lt;!&ndash; 圆角矩形宽高相等,取较宽高中大值&ndash;&gt;-->
+<!--<attr name="rv_isWidthHeightEqual" format="boolean"/>-->
+    <!--&lt;!&ndash; 圆角弧度,单位dp,TopLeft&ndash;&gt;-->
+<!--<attr name="rv_cornerRadius_TL" format="dimension"/>-->
+    <!--&lt;!&ndash; 圆角弧度,单位dp,TopRight&ndash;&gt;-->
+<!--<attr name="rv_cornerRadius_TR" format="dimension"/>-->
+    <!--&lt;!&ndash; 圆角弧度,单位dp,BottomLeft&ndash;&gt;-->
+<!--<attr name="rv_cornerRadius_BL" format="dimension"/>-->
+    <!--&lt;!&ndash; 圆角弧度,单位dp,BottomRight&ndash;&gt;-->
+<!--<attr name="rv_cornerRadius_BR" format="dimension"/>-->
+    <!--&lt;!&ndash; 是否有Ripple效果,api21+有效&ndash;&gt;-->
+<!--<attr name="rv_isRippleEnable" format="boolean"/>-->

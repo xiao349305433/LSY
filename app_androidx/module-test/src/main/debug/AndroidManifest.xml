@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.test1moudle"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <application
+        android:name=".init.TestApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/base_photo"
+        android:label="@string/m_test_name"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/LFiveTheme.NoActionBar"
+        tools:replace="android:label,android:theme">
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="ff02e2b824e7aeff5a481e9310abecdd">
+        </meta-data>
+        <activity android:name=".v.activity.MainYesPresenterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter" />
+        </activity>
+        <activity
+            android:name=".v.activity.TinyWindowPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.JsBridgeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.DemoKotlinActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.UARTLoopbackActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".v.activity.TestPlayer"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.TestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.StyleTabActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.BlueToothActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.DefineBehaviorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.TestTabActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.ScrollingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.TestTopTabActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.LocationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.TestNetWorkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.RecyclePlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.PrintBitmapActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.DemoActivity1"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.CoorDiLatorTabActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.modulebanner.v.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.modulerefresh.v.activity.RefreshTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.modulerefresh.v.activity.TestRefreshActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.modulerefresh.v.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.DownLoadActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.ZxingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.LottieActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.ScrollViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.test1moudle.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/base_fileprovider_mattise" />
+        </provider>
+    </application>
+
+</manifest>

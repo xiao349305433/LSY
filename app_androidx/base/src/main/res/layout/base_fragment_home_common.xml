@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_common_distanceSize_20px"
+        android:visibility="gone" />
+
+    <com.flyco.roundview.RoundLinearLayout
+        android:id="@+id/linear_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:rv_backgroundColor="@color/base_white"
+        app:rv_cornerRadius="3dp"
+        app:rv_strokeColor="@color/base_R"
+        app:rv_strokeWidth="1dp">
+
+        <com.flyco.roundview.RoundRelativeLayout
+            android:id="@+id/relative_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_common_distanceSize_80px"
+            app:rv_backgroundColor="@color/base_R"
+            app:rv_cornerRadius_TL="2.5dp"
+            app:rv_cornerRadius_TR="2.5dp">
+
+            <ImageView
+                android:id="@+id/image_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_common_distanceSize_20px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/base_grzl_jt" />
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_common_distanceSize_20px"
+                android:layout_toEndOf="@+id/image_icon"
+                android:layout_toRightOf="@+id/image_icon"
+                android:text="功能定制区"
+                android:textColor="@color/base_white"
+                android:textSize="@dimen/base_global_text_size_30px" />
+
+            <TextView
+                android:id="@+id/text_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/base_common_distanceSize_40px"
+                android:gravity="center_vertical"
+                android:text="定制"
+                android:textColor="@color/base_white"
+                android:textSize="@dimen/base_common_textSize_24px" />
+
+        </com.flyco.roundview.RoundRelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_bottom"
+            android:layout_margin="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </com.flyco.roundview.RoundLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_common_distanceSize_20px"
+        android:visibility="gone" />
+
+
+</LinearLayout>

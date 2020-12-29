@@ -1,0 +1,93 @@
+apply plugin: rootProject.ext.plugins.library
+apply plugin: rootProject.ext.plugins.kotlin_android
+apply plugin: rootProject.ext.plugins.kotlin_android_extensions
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        testInstrumentationRunner rootProject.ext.android.testInstrumentationRunner
+        vectorDrawables.useSupportLibrary = true
+        //arouter配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'armeabi-v7a'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    resourcePrefix "base_utils_"
+    useLibrary 'org.apache.http.legacy'
+    lintOptions {
+        disable 'RestrictedApi'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation rootProject.ext.compiles.junit
+    androidTestImplementation rootProject.ext.compiles.runner
+    androidTestImplementation rootProject.ext.compiles.espresso
+    api rootProject.ext.compiles.lifecycle
+    api rootProject.ext.compiles.navigation
+    api rootProject.ext.compiles.navigation_ui
+    api rootProject.ext.compiles.vectordrawable
+    api rootProject.ext.compiles.constraintlayout
+    api rootProject.ext.compiles.material
+    api rootProject.ext.compiles.androidx
+    api rootProject.ext.compiles.cardview
+    //
+    //    /**
+    //     * 整个项目都会使用的库
+    //     */
+    api rootProject.ext.libs.lib_nohttp
+    api rootProject.ext.libs.lib_okhttpUrl
+    api rootProject.ext.libs.lib_gson
+    api rootProject.ext.libs.lib_litepal
+    api rootProject.ext.libs.lib_glide
+    api rootProject.ext.libs.lib_simplecropview
+    api rootProject.ext.libs.lib_photoView
+    api rootProject.ext.libs.lib_rxandroid
+    api rootProject.ext.libs.lib_rxjava
+    api rootProject.ext.libs.lib_eventbus
+    api rootProject.ext.libs.lib_swipebacklayout
+    api rootProject.ext.libs.lib_smartrefresh
+    api rootProject.ext.libs.lib_arouter_api
+    api rootProject.ext.libs.lib_flycoRoundView
+    api rootProject.ext.libs.lib_rxpermissions
+    api rootProject.ext.libs.lib_badgeview
+    api rootProject.ext.libs.lib_UpdatePlugin
+    api rootProject.ext.libs.lib_bugly_crashreport
+    api rootProject.ext.libs.lib_bugly_native
+    api rootProject.ext.libs.lib_xlog
+    api rootProject.ext.libs.lib_autosize
+    api rootProject.ext.libs.lib_switchbutton
+    api rootProject.ext.libs.lib_FastBleLib
+    api rootProject.ext.libs.lib_ZzExcelCreator
+    api rootProject.ext.libs.lib_GDlocation
+    api rootProject.ext.libs.lib_GDsearch
+    api project(path: ':library-banner')
+    api project(path: ':library-matisse')
+    api project(path: ':library-zxingcore')
+}
+

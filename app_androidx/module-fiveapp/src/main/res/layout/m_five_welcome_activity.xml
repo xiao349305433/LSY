@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <met.hx.com.librarybase.some_utils.util.AbViewPager
+        android:id="@+id/ab_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </met.hx.com.librarybase.some_utils.util.AbViewPager>
+
+    <met.hx.com.librarybase.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        CircleIndicator:baseUtils_ci_background="@android:color/white"
+        CircleIndicator:baseUtils_ci_gravity="center"
+        CircleIndicator:baseUtils_ci_margin="10dp"
+        CircleIndicator:baseUtils_ci_mode="outside"
+        CircleIndicator:baseUtils_ci_radius="5dp"
+        android:layout_marginBottom="20dp"
+        CircleIndicator:baseUtils_ci_selected_background="#ffe6454a" />
+</FrameLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/yellew_fix"
+    android:orientation="vertical">
+    <include layout="@layout/base_toolbar" />
+    <ScrollView
+        android:id="@+id/test_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物联调试参数"
+                ></TextView>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="42dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center_vertical"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="130dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="倍率（脉冲常数）："-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    ></TextView>-->
+
+<!--                <com.flyco.roundview.RoundLinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="32dp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    app:rv_backgroundColor="#F0F4F7"-->
+<!--                    app:rv_cornerRadius="5dp">-->
+
+<!--                    <Spinner-->
+<!--                        android:id="@+id/tu2_beilv_select"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="32dp"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_toRightOf="@+id/xindaocanshu"-->
+<!--                        android:entries="@array/l_loushanyun_pulseconstant"-->
+<!--                        android:clickable="false"-->
+<!--                        android:gravity="center" />-->
+
+<!--                </com.flyco.roundview.RoundLinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="42dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center_vertical"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="130dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="脉冲个数："-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    ></TextView>-->
+
+<!--                <com.flyco.roundview.RoundLinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="32dp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    app:rv_backgroundColor="#F0F4F7"-->
+<!--                    app:rv_cornerRadius="5dp">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/tu2_edit_maichonggeshu"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="32dp"-->
+<!--                        android:layout_centerVertical="true"-->
+
+<!--                        android:background="@null"-->
+<!--                        />-->
+
+<!--                </com.flyco.roundview.RoundLinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="42dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center_vertical"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="130dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="脉冲读数(m³)："-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    ></TextView>-->
+
+<!--                <com.flyco.roundview.RoundLinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="32dp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    app:rv_backgroundColor="#F0F4F7"-->
+<!--                    app:rv_cornerRadius="5dp">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/tu2_edit_maichongdushu"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="32dp"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:enabled="false"-->
+<!--                        android:background="@null"-->
+<!--                        />-->
+
+<!--                </com.flyco.roundview.RoundLinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="42dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center_vertical"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="130dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="电池状态："-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    ></TextView>-->
+
+<!--                <com.flyco.roundview.RoundLinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="32dp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    app:rv_backgroundColor="#F0F4F7"-->
+<!--                    app:rv_cornerRadius="5dp">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/tu2_edit_dianchizhuangtai"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="32dp"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:enabled="false"-->
+<!--                        android:background="@null"-->
+<!--                        />-->
+
+<!--                </com.flyco.roundview.RoundLinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="软件版本："
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    ></TextView>
+
+                <com.flyco.roundview.RoundLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:rv_backgroundColor="#F0F4F7"
+                    app:rv_cornerRadius="5dp">
+
+                    <EditText
+                        android:id="@+id/tu2_edit_SoftWareVersion"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:enabled="false"
+                        android:background="@null"
+                        />
+
+                </com.flyco.roundview.RoundLinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="硬件版本："
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    ></TextView>
+
+                <com.flyco.roundview.RoundLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:rv_backgroundColor="#F0F4F7"
+                    app:rv_cornerRadius="5dp">
+
+                    <EditText
+                        android:id="@+id/tu2_edit_HardWareVersion"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:enabled="false"
+                        android:background="@null"
+                        />
+
+                </com.flyco.roundview.RoundLinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/tu2_one_setting"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:text="配  置"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:gravity="center"-->
+<!--                android:background="@color/blue_bg"-->
+<!--                ></TextView>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

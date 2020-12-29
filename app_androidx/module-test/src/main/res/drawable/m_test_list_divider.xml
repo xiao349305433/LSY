@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/m_test_padding_common">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/m_test_colorDivison" />
+            <size android:height="@dimen/m_test_division_line"/>
+        </shape>
+    </item>
+</layer-list>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:shape="line"-->
+    <!--android:thickness="1dp"-->
+    <!--android:tint="@color/colorDivison">-->
+
+    <!--<stroke android:color="@color/colorDivison"/>-->
+    <!--<size android:height="0.5dp"/>-->
+
+<!--</shape>-->

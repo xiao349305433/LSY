@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".features.style.StyleActivity">
+            <include layout="@layout/base_toolbar"/>
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_normal" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_normal"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_no_animation" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_no_animation"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_no_shifting_mode" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_no_shifting_mode"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_no_item_shifting_mode" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_no_item_shifting_mode"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_no_text" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_no_text"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_no_icon" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_no_icon"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_no_animation_shifting_mode" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_no_animation_shifting_mode"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_no_animation_item_shifting_mode" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_no_animation_item_shifting_mode"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_no_animation_shifting_mode_item_shifting_mode" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_no_animation_shifting_mode_item_shifting_mode"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_no_shifting_mode_item_shift_mode_text" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_no_shifting_mode_item_shifting_mode_text"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_no_animation_shifting_mode_item_shifting_mode_text" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_no_animation_shifting_mode_item_shifting_mode_text"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_no_shifting_mode_item_shifting_mode_icon" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_no_shifting_mode_item_shifting_mode_and_icon"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_no_item_shifting_mode_icon" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_no_item_shifting_mode_icon"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_no_animation_shifting_mode_item_shifting_mode_icon" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_no_animation_shifting_mode_item_shifting_mode_icon"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_with_padding" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_with_padding"
+                style="@style/m_test_bnve_primary_bg"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_center_icon_only" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_center_icon_only"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation_center_icon_only" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_smaller_text" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_smaller_text"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_bigger_icon" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_bigger_icon"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_custom_typeface" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_custom_typeface"
+                style="@style/m_test_bnve_primary_bg"
+                app:itemIconTint="@color/m_test_selector_item_gray_color"
+                app:itemTextColor="@color/m_test_selector_item_gray_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_icon_selector" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_icon_selector"
+                style="@style/m_test_bnve_white_bg"
+                app:itemIconTint="@color/m_test_selector_item_primary_color"
+                app:itemTextColor="@color/m_test_selector_item_primary_color"
+                app:menu="@menu/m_test_menu_navigation_selector" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_icon_margin_top" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_icon_margin_top"
+                style="@style/m_test_bnve_white_bg"
+                app:itemIconTint="@color/m_test_selector_item_primary_color"
+                app:itemTextColor="@color/m_test_selector_item_primary_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+            <TextView
+                style="@style/m_test_text_black"
+                android:text="@string/m_test_unchecked_first_time" />
+
+            <met.hx.com.librarybase.views.BottomNavigationViewEx
+                android:id="@+id/bnve_unchecked_first_time"
+                style="@style/m_test_bnve_white_bg"
+                app:itemIconTint="@color/m_test_selector_item_primary_color"
+                app:itemTextColor="@color/m_test_selector_item_primary_color"
+                app:menu="@menu/m_test_menu_navigation" />
+
+        </LinearLayout>
+
+    </ScrollView>

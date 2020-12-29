@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:divider="@color/base_utils_md_dialog_divider_dark">
+
+            <Button
+                android:id="@+id/test1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="测试打印机" />
+            <Button
+                android:id="@+id/test_jsBridge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="jsBridge交互" />
+
+            <Button
+                android:id="@+id/webs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="跳转web页" />
+
+            <Button
+                android:id="@+id/webs_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="fragment形式的跳转web页" />
+
+            <Button
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="广告条" />
+
+            <Button
+                android:id="@+id/refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="刷新" />
+
+            <Button
+                android:id="@+id/refresh_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="可随便用的刷新，自定义group" />
+
+            <Button
+                android:id="@+id/permission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="申请相机权限" />
+
+
+            <Button
+                android:id="@+id/btn_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="导航栏" />
+
+            <Button
+                android:id="@+id/btn_tab_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="导航栏各种样式" />
+
+
+            <Button
+                android:id="@+id/show_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="滚动页面" />
+
+            <Button
+                android:id="@+id/show_dialog1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="弹出加载框" />
+
+            <Button
+                android:id="@+id/show_dialog2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="弹窗示例" />
+
+            <Button
+                android:id="@+id/diss_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="隐藏加载框" />
+
+            <Button
+                android:id="@+id/go_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="fragment视频" />
+
+            <Button
+                android:id="@+id/choose_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="选择图片" />
+
+            <ImageView
+                android:id="@+id/image_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/top_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="顶部导航" />
+
+            <Button
+                android:id="@+id/button_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="定位+连续定位" />
+
+            <Button
+                android:id="@+id/button_choose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="选择系统文件" />
+
+            <Button
+                android:id="@+id/button_crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="图片裁剪" />
+
+            <Button
+                android:id="@+id/button_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="图片浏览" />
+
+            <Button
+                android:id="@+id/button_player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="播放器fragment中使用" />
+
+            <Button
+                android:id="@+id/button_recycle_player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="播放器在列表使用" />
+
+            <Button
+                android:id="@+id/button_limit_player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="小窗口播放" />
+
+            <Button
+                android:id="@+id/button_big_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="刷新时放大图片" />
+
+            <Button
+                android:id="@+id/button_download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="文件下载" />
+
+            <Button
+                android:id="@+id/button_erweima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="二维码" />
+
+            <Button
+                android:id="@+id/button_lottie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:height="80dp"
+                android:text="lottie动画" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

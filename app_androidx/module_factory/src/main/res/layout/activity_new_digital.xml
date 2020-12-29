@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <TextView
+        android:id="@+id/mod_ttl"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/border_radius_3dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="TTL" />
+
+    <TextView
+        android:id="@+id/mod_bus"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_radius_3dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="MOD-BUS" />
+
+    <TextView
+        android:id="@+id/mod_485"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_radius_3dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="485" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/m01bg" />
+</LinearLayout>

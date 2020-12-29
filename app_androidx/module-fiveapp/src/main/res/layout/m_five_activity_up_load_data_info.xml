@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/base_global_neutral_gray_c6c9d4"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                app:rv_backgroundColor="@color/base_white"
+                app:rv_cornerRadius="3dp">
+
+                <TextView
+                    android:id="@+id/sn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="物联SN：01561117C6F34399"
+                    android:textColor="#7a7a7a"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/text_quyuhao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="网格号："
+                    android:textColor="#7a7a7a"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="保存时间：2018-06-13 00:00:00"
+                    android:textColor="#7a7a7a"
+                    android:textSize="15sp" />
+
+            </com.flyco.roundview.RoundLinearLayout>
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                app:rv_backgroundColor="@color/base_white"
+                app:rv_cornerRadius="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="初始化参数信息"
+                    android:textColor="#7a7a7a"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/data_init"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="表号：1-50
+扩频因子：SF9 信号强度(Rssi)：18dbm
+信道参数：模式A 信噪比(Snr)：12"
+                    android:textColor="#7a7a7a"
+                    android:textSize="15sp" />
+
+
+            </com.flyco.roundview.RoundLinearLayout>
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                app:rv_backgroundColor="@color/base_white"
+                app:rv_cornerRadius="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="出厂配置信息"
+                    android:textColor="#7a7a7a"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#80000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/data_left"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        tools:text="使用类型：2
+产品形式：远传表号接入
+传感信号：3EV
+无线频率：470MHZ
+发送频率：24小时
+电池类型：物联电池"
+                        android:textColor="#7a7a7a"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#80000000" />
+
+                    <TextView
+                        android:id="@+id/data_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        tools:text="物联电池：正常
+计量状态：正常
+通讯状态：异常
+厂家标识：
+硬件版本：2
+软件版本：2"
+                        android:textColor="#7a7a7a"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/time_factory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="出厂时间：2018-01-17 00:00:00"
+                    android:textColor="#7a7a7a"
+                    android:textSize="15sp" />
+
+
+            </com.flyco.roundview.RoundLinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/lv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/base_photo" />
+
+                <ImageView
+                    android:id="@+id/lv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/base_photo" />
+
+                <ImageView
+                    android:id="@+id/lv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/base_photo" />
+
+                <ImageView
+                    android:id="@+id/lv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/base_photo" />
+
+            </LinearLayout>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/upload"
+                android:layout_width="210dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="上传"
+                android:textColor="@color/base_white"
+                app:rv_backgroundColor="@color/l_five_Q"
+                app:rv_cornerRadius="5dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

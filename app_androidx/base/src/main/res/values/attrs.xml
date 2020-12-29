@@ -1,0 +1,173 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+    <declare-styleable name="base_SlidingMenu">
+        <attr name="base_mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="base_viewAbove" format="reference" />
+        <attr name="base_viewBehind" format="reference" />
+        <attr name="base_behindOffset" format="dimension" />
+        <attr name="base_behindWidth" format="dimension" />
+        <attr name="base_behindScrollScale" format="float" />
+        <attr name="base_touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="base_touchModeBehind">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="base_shadowDrawable" format="reference" />
+        <attr name="base_shadowWidth" format="dimension" />
+        <attr name="base_fadeEnabled" format="boolean" />
+        <attr name="base_fadeDegree" format="float" />
+        <attr name="base_selectorEnabled" format="boolean" />
+        <attr name="base_selectorDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="base_RoundAngleImageView">
+		<attr name="base_roundWidth" format="dimension" />
+		<attr name="base_roundHeight" format="dimension" />
+	</declare-styleable>
+	
+    <declare-styleable name="base_PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="base_ptrRefreshableViewBackground" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="base_ptrHeaderBackground" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="base_ptrHeaderTextColor" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="base_ptrHeaderSubTextColor" format="reference|color" />
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="base_ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="base_ptrShowIndicator" format="reference|boolean" />
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="base_ptrDrawable" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="base_ptrDrawableStart" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="base_ptrDrawableEnd" format="reference" />
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="base_ptrOverScroll" format="reference|boolean" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="base_ptrHeaderTextAppearance" format="reference" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="base_ptrSubHeaderTextAppearance" format="reference" />
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="base_ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="base_ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="base_ptrListViewExtrasEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="base_ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="base_ptrAdapterViewBackground" format="reference|color" />
+        <attr name="base_ptrDrawableTop" format="reference" />
+        <attr name="base_ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+
+
+
+        <attr name="base_borderRadius" format="dimension" />
+        <attr name="base_type">
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+
+        <declare-styleable name="base_RoundImageView">
+            <attr name="base_borderRadius" />
+            <attr name="base_type" />
+        </declare-styleable>
+
+    <!-- 圆形进度条属性-->
+    <declare-styleable name="base_CircleProgress">
+        <!-- 进度条的背景色-->
+        <attr name="base_bgColor" format="color" />
+        <!-- 进度条的前景色 起始颜色-->
+        <attr name="base_foreStartColor" format="color" />
+        <!-- 进度条的前景色 结束颜色-->
+        <attr name="base_foreEndColor" format="color" />
+        <!-- 进度条的大小-->
+        <attr name="base_progressWidth" format="dimension" />
+        <!-- 最大进度-->
+        <attr name="base_maxProgress" format="integer" />
+        <!-- 现在的进度-->
+        <attr name="base_currProgress" format="integer" />
+        <!-- 进度条的起始位置-->
+        <attr name="base_progressInitialPosition" format="integer" />
+        <!-- 是否使用动画-->
+        <attr name="base_useAnimation" format="boolean" />
+        <!-- 使用渐变-->
+        <attr name="base_useGradient" format="boolean" />
+        <!-- 边角是否是圆的-->
+        <attr name="base_isCircleCorner" format="boolean" />
+        <!-- 是否是实心的-->
+        <attr name="base_isSolid" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="base_RotateTextView" >
+        <attr name="base_degree" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="base_CoordinatorTabLayout">
+        <attr name="base_contentScrim" format="color" />
+        <attr name="base_tabIndicatorColor" format="color" />
+        <attr name="base_tabTextColor" format="color" />
+    </declare-styleable>
+</resources>

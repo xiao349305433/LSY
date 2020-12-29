@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0fef7"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/bluetooth_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="蓝牙名称：未连接"
+                android:textColor="#666666" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/base_white"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="22dp"
+                        android:background="#dfe3e6" />
+
+                    <TextView
+                        android:id="@+id/factory_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="物联SN：
+接入形式：
+传感信号：
+发送频率：
+出厂日期：
+厂家标识：
+流向：正常
+传感器：正常
+计量状态：正常
+通讯状态：正常" />
+
+                </LinearLayout>
+
+                <com.flyco.roundview.RoundTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="出厂设置信息"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="@color/l_five_Q"
+                    app:rv_cornerRadius="3dp" />
+
+                <ImageView
+                    android:id="@+id/system_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/l_loushanyun_active_enable" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/base_white"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <com.flyco.roundview.RoundTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="初始化数据"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="@color/l_five_Q"
+                    app:rv_cornerRadius="3dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_chushihua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <com.flyco.roundview.RoundTextView
+                            android:id="@+id/unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="7dp"
+                            android:paddingLeft="21dp"
+                            android:paddingRight="21dp"
+                            android:paddingTop="7dp"
+                            android:text="单元"
+                            android:textColor="@color/base_white"
+                            app:rv_backgroundColor="@color/l_five_Q"
+                            app:rv_cornerRadius="5dp" />
+
+                        <com.flyco.roundview.RoundTextView
+                            android:id="@+id/whole"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:paddingBottom="7dp"
+                            android:paddingLeft="21dp"
+                            android:paddingRight="21dp"
+                            android:paddingTop="7dp"
+                            android:text="整表"
+                            android:textColor="@color/base_white"
+                            app:rv_backgroundColor="@color/l_five_Q"
+                            app:rv_cornerRadius="5dp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#dfe3e6" />
+
+                <LinearLayout
+                    android:id="@+id/hide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="脉冲常数(个/m³)" />
+
+                        <TextView
+                            android:id="@+id/maichongchangshu"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/m_twoinit_bg_type_selecter_wlwd"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="1000" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#dfe3e6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="倍率(m³/ev)" />
+
+                        <Spinner
+                            android:id="@+id/beilv"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/m_twoinit_bg_type_selecter_wlwd"
+                            android:entries="@array/m_twoinit_pulseconstant"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#dfe3e6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="初始脉冲(个)" />
+
+                        <EditText
+                            android:id="@+id/chushimaichong"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/m_twoinit_bg_type_selecter_wlwd"
+                            android:gravity="center_vertical"
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#dfe3e6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="初始读数(m³)" />
+
+                        <TextView
+                            android:id="@+id/chuchidushu"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/m_twoinit_bg_type_selecter_wlwd"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#dfe3e6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_xindaocanshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="信道参数" />
+
+                    <Spinner
+                        android:id="@+id/xindaocanshu"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/m_twoinit_bg_type_selecter_wlwd"
+                        android:entries="@array/m_twoinit_xindaocanshu"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_kuopinyinzi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="扩频因子" />
+
+                    <Spinner
+                        android:id="@+id/kuopinyinzi"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/m_twoinit_bg_type_selecter_wlwd"
+                        android:entries="@array/m_twoinit_kuopinyinzi"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_fasonggonglv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="发送功率" />
+
+                    <Spinner
+                        android:id="@+id/fasonggonglv"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/m_twoinit_bg_type_selecter_wlwd"
+                        android:entries="@array/m_twoinit_xinhaoqiangdu"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#dfe3e6" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="备注" />
+
+                    <EditText
+                        android:id="@+id/input_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/m_twoinit_bg_type_selecter_wlwd"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#dfe3e6" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/base_white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="口径" />
+
+                    <Spinner
+                        android:id="@+id/caliber"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/m_twoinit_bg_type_selecter_wlwd"
+                        android:entries="@array/m_twoinit_caliber"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#dfe3e6" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/data_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:text="设置"
+                        android:textColor="#5e5e5e"
+                        app:rv_backgroundColor="#f0f4f7"
+                        app:rv_cornerRadius="3dp" />
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/data_load"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:text="读取"
+                        android:textColor="#5e5e5e"
+                        app:rv_backgroundColor="#f0f4f7"
+                        app:rv_cornerRadius="3dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_selector"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/m_twoinit_zx" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/base_white"
+                    android:gravity="center"
+                    android:text="未连接蓝牙时只能修改本地图片！！！
+
+长按可查看所选图片！！！"
+                    android:textColor="@color/l_five_Q" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_bottom_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/task_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="模拟数据上送测试"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="@color/l_five_Q"
+                    app:rv_cornerRadius="15dp" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/data_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="保存"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="@color/l_five_Q"
+                    app:rv_cornerRadius="15dp" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/xiumian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="休眠"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="@color/l_five_Q"
+                    app:rv_cornerRadius="15dp" />
+            </LinearLayout>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/data_upload"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="上传"
+                android:textColor="@color/base_white"
+                android:visibility="gone"
+                app:rv_backgroundColor="@color/l_five_Q"
+                app:rv_cornerRadius="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

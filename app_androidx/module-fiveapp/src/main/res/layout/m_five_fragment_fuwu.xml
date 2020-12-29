@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.flyco.roundview.RoundLinearLayout
+        android:id="@+id/linear_benDi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        app:rv_backgroundColor="@color/base_white"
+        app:rv_cornerRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#E2E3E6"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="信号测试"
+                android:textColor="@color/l_five_Q" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_global_neutral_gray_c6c9d4" />
+
+        <TextView
+            android:id="@+id/round_text_fujin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableEnd="@drawable/more"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="信号测试"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_global_neutral_gray_c6c9d4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#E2E3E6"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="检修"
+                android:textColor="@color/l_five_Q" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_global_neutral_gray_c6c9d4" />
+
+        <TextView
+            android:id="@+id/round_text_shebeixinxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableEnd="@drawable/more"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="检修"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_global_neutral_gray_c6c9d4" />
+
+        <TextView
+            android:id="@+id/round_text_xianchangjiancha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableEnd="@drawable/more"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="现场检查端设备"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_global_neutral_gray_c6c9d4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#E2E3E6"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="端设备更换"
+                android:textColor="@color/l_five_Q" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_global_neutral_gray_c6c9d4" />
+
+        <TextView
+            android:id="@+id/round_text_xianchanggenghuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableEnd="@drawable/more"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="现场更换端设备"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_global_neutral_gray_c6c9d4" />
+
+        <TextView
+            android:id="@+id/round_text_genghuantongbu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableEnd="@drawable/more"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="同步上传端设备更换数据"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_global_neutral_gray_c6c9d4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#E2E3E6"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="表单元更换"
+                android:textColor="@color/l_five_Q" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_global_neutral_gray_c6c9d4" />
+
+        <TextView
+            android:id="@+id/round_text_genghuan_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableEnd="@drawable/more"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="现场更换表单元"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_global_neutral_gray_c6c9d4" />
+
+        <TextView
+            android:id="@+id/round_text_tongbu_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableEnd="@drawable/more"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="同步上传表单元更换数据"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_global_neutral_gray_c6c9d4" />
+    </com.flyco.roundview.RoundLinearLayout>
+</androidx.core.widget.NestedScrollView>

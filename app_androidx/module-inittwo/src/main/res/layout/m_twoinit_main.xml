@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/m_twoinit_bj">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:orientation="horizontal">
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/round_text_chuangjiandingwei"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="本地新装"
+                android:textColor="@color/base_white"
+                app:rv_backgroundColor="@color/l_five_Q"
+                app:rv_cornerRadius="13dp" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/round_text_gengxindingwei"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="后期变更"
+                android:textColor="@color/base_white"
+                app:rv_backgroundColor="@color/l_five_Q"
+                app:rv_cornerRadius="13dp" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/round_text_tongbu"
+                android:layout_width="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="同步娄山云"
+                android:textColor="@color/base_white"
+                app:rv_backgroundColor="@color/l_five_Q"
+                app:rv_cornerRadius="13dp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

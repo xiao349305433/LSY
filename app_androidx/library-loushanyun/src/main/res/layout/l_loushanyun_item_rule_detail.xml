@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:text="http://schemas.android.com/tools"
+    android:id="@+id/card_main_1_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="2dp"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+    <com.flyco.roundview.RoundRelativeLayout
+        android:id="@+id/relative_details"
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        app:rv_strokeColor="@color/base_Q1"
+        app:rv_strokeWidth="2dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/linear_startbit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起始Bit: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_bitstart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_bitend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/linear_startbit"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束Bit: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_bitend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_tiji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_bitend"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="字段描述: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_miaoshu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="正向体积" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_moshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_tiji"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="解析模式: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_moshi"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content"
+                android:text="大端模式" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_minling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_moshi"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="配置命令: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_minling"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content"
+                android:text="010101010101" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_maxbyte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_minling"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最大字节数: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_maxbyte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="13" />
+        </LinearLayout>
+    </com.flyco.roundview.RoundRelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

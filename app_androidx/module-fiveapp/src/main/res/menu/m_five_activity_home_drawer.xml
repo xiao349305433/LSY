@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_main_shuiwu"
+            android:checked="true"
+            android:icon="@drawable/m_five_water"
+            android:title="水务物联网" />
+
+        <item
+            android:id="@+id/ic_main_phone"
+            android:icon="@drawable/m_five_mobile_phone"
+            android:title="手机采集" />
+
+        <item
+            android:id="@+id/ic_main_manage"
+            android:icon="@drawable/m_five_analysis"
+            android:title="水务管理" />
+
+        <item
+            android:id="@+id/ic_main_fenxi"
+            android:icon="@drawable/m_five_administration"
+            android:title="智能分析" />
+    </group>
+
+    <item android:title="设置选项">
+        <menu>
+            <item
+                android:id="@+id/ic_main_change"
+                android:icon="@drawable/m_five_settings_black_24dp"
+                android:title="切换账号" />
+        </menu>
+    </item>
+
+</menu>

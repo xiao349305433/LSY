@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--这里是圆角布局的属性-->
+    <declare-styleable name="BaseUtilsRCRelativeLayout">
+        <!--圆形-->
+        <attr name="baseUtils_round_as_circle" format="boolean"/>
+        <!--全部圆角半径-->
+        <attr name="baseUtils_round_corner" format="integer|dimension"/>
+        <!--针对各个角的半径-->
+        <attr name="baseUtils_round_corner_top_left" format="integer|dimension"/>
+        <attr name="baseUtils_round_corner_top_right" format="integer|dimension"/>
+        <attr name="baseUtils_round_corner_bottom_left" format="integer|dimension"/>
+        <attr name="baseUtils_round_corner_bottom_right" format="integer|dimension"/>
+
+        <!--描边颜色／半径-->
+        <attr name="baseUtils_stroke_color" format="color|reference"/>
+        <attr name="baseUtils_stroke_width" format="integer|dimension"/>
+    </declare-styleable>
+    <declare-styleable name="BaseUtilsCircleImageView">
+        <attr name="base_utils_width" format="dimension" />
+        <attr name="base_utils_color" format="color" />
+    </declare-styleable>
+
+    <!--这里是ProgressBar的属性-->
+    <declare-styleable name="BaseUtilsProgressBar">
+        <attr name="baseUtils_progress_reached_color" format="color"/>
+        <attr name="baseUtils_progress_unreached_color" format="color"/>
+        <attr name="baseUtils_progress_text_color" format="color"/>
+        <attr name="baseUtils_progress_text_size" format="dimension"/>
+        <attr name="baseUtils_progress_reached_bar_height" format="dimension"/>
+        <attr name="baseUtils_progress_unreached_bar_height" format="dimension"/>
+        <attr name="baseUtils_progress_text_offset" format="dimension"/>
+        <attr name="baseUtils_progress_text_visibility" format="integer"/>
+        <attr name="baseUtils_progress" format="integer"/>
+        <attr name="baseUtils_max" format="integer"/>
+    </declare-styleable>
+
+    <!--XTabLayout属性-->
+    <declare-styleable name="BaseUtilsXTabLayout">
+        <attr name="baseUtils_xTabIndicatorHeight" format="dimension"/>
+        <attr name="baseUtils_xTabIndicatorWidth" format="dimension"/>
+        <attr name="baseUtils_xTabIndicatorColor" format="color"/>
+        <attr name="baseUtils_xTabPadding" format="dimension"/>
+        <attr name="baseUtils_xTabPaddingStart" format="dimension"/>
+        <attr name="baseUtils_xTabPaddingTop" format="dimension"/>
+        <attr name="baseUtils_xTabPaddingEnd" format="dimension"/>
+        <attr name="baseUtils_xTabPaddingBottom" format="dimension"/>
+        <attr name="baseUtils_xTabTextAppearance" format="reference"/>
+        <attr name="baseUtils_xTabTextColor" format="color"/>
+        <attr name="baseUtils_xTabSelectedTextColor" format="color"/>
+        <attr name="baseUtils_xTabMinWidth" format="dimension"/>
+        <attr name="baseUtils_xTabMaxWidth" format="dimension"/>
+        <attr name="baseUtils_xTabBackgroundColor" format="reference|color"/>
+        <attr name="baseUtils_xTabSelectedBackgroundColor" format="reference|color"/>
+        <attr name="baseUtils_xTabContentStart" format="dimension"/>
+        <attr name="baseUtils_xTabMode">
+            <enum name="scrollable" value="0x00000000" />
+            <enum name="fixed" value="0x00000001" />
+        </attr>
+        <attr name="baseUtils_xTabGravity" format="integer"/>
+
+        <attr name="baseUtils_xTabTextSize" format="dimension"/>
+        <attr name="baseUtils_xTabTextBold" format="boolean"/>
+        <attr name="baseUtils_xTabSelectedTextSize" format="dimension"/>
+        <attr name="baseUtils_xTabTextSelectedBold" format="boolean"/>
+        <attr name="baseUtils_xTabDisplayNum" format="integer"/>
+        <attr name="baseUtils_xTabTextAllCaps" format="boolean"/>
+
+
+        <attr name="baseUtils_xTabDividerHeight" format="dimension"/>
+        <attr name="baseUtils_xTabDividerWidth" format="dimension"/>
+        <attr name="baseUtils_xTabDividerWidthWidthText" format="boolean"/>
+        <attr name="baseUtils_xTabDividerColor" format="color"/>
+        <attr name="baseUtils_xTabDividerGravity">
+            <enum name="top" value="0x00000000" />
+            <enum name="center" value="0x00000001" />
+            <enum name="bottom" value="0x00000002" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="baseUtils_CircleIndicator">
+        <attr name="baseUtils_ci_radius" format="dimension"/>
+        <attr name="baseUtils_ci_margin" format="dimension"/>
+        <attr name="baseUtils_ci_background" format="color|integer"/>
+        <attr name="baseUtils_ci_selected_background" format="color|integer"/>
+        <attr name="baseUtils_ci_gravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="baseUtils_ci_mode">
+            <enum name="inside" value="0"/>
+            <enum name="outside" value="1"/>
+            <enum name="solo" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

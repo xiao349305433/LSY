@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_all"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="2dp"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/relative_first"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_sn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="物联SN：01561117C6AB4B0C"
+                    android:singleLine="true"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#7a7a7a"
+                    android:textSize="15sp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/text_mac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="MAC地址：00:17:C6:A9:11:AC"
+                        android:singleLine="true"
+                        android:textColor="#43DB4D"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/text_xinhao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        tools:text="信号：-77"
+                        android:singleLine="true"
+                        android:textColor="#43DB4D"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/text_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                app:rv_cornerRadius="4dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="配置"
+                android:textColor="#fff"
+                app:rv_backgroundColor="@color/base_global_neutral_gray_c6c9d4"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/base_global_neutral_gray_c6c9d4" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/relative_second"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_changjiadaima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="厂家名称：某某某"
+                    android:singleLine="true"
+                    android:textColor="#7a7a7a"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_chuanganxinhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="传感信号：3EV"
+                    android:textColor="#7a7a7a"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_chuchangriqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="出厂日期：2018-06-19 00:00:00"
+                    android:textColor="#7a7a7a"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/text_beizhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="备注：某某某某某某某某某某"
+                    android:singleLine="true"
+                    android:textColor="#7a7a7a"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/text_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    app:rv_cornerRadius="4dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="详情"
+                    android:textColor="#fff"
+                    app:rv_backgroundColor="#8D4545"
+                    android:textSize="15sp" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/text_delete"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    app:rv_cornerRadius="4dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="#fff"
+                    app:rv_backgroundColor="#8D4545"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

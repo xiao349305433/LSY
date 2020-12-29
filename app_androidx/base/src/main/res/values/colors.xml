@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--base==start-->
+    <color name="base_colorPrimary">#3F51B5</color>
+    <color name="base_text_white">#fff</color>
+    <color name="base_trans">#00000000</color>
+    <color name="base_white">#fff</color>
+    <color name="base_gray_light_eeeff3">#eeeff3</color>
+    <!--全局用色-->
+    <!--主色调：红色-->
+    <color name="base_Q1">#00a0e9</color>
+
+    <color name="base_order_blue">#d1dff2</color>
+
+    <color name="base_item_blue">#2663ae</color>
+
+    <!--辅助色：绿色-->
+    <!--辅助色：橙色-->
+
+    <!-- 背景用色-->
+    <!--背景：纯白-->
+    <!--背景：浅灰-->
+
+    <!-- 分割线用色  -->
+    <!--顶部标题栏、底部tab栏分割线-->
+    <!--滑动标签与列表间分割线-->
+    <!--列表间分割线-->
+    <!--项目中字体的颜色更改;把6666666和999999 改为 444444-->
+    <!--&lt;!&ndash;文字一：浅灰&ndash;&gt;
+    <color name="G">#999999</color>
+    &lt;!&ndash;文字一：深灰&ndash;&gt;
+    <color name="S">#666666</color>-->
+    <!--文字一：浅灰-->
+    <color name="base_G">#444444</color>
+    <!--文字一：深黑-->
+    <color name="base_H">#000000</color>
+    <!--文字一：红色-->
+    <color name="base_R">#F23030</color>
+    <color name="base_Red">#f20606</color>
+    <!--文字一：绿色-->
+    <!--文字一：橙色-->
+    <!--<color name="base_C">#fe8500</color>-->
+    <!--通用搜索框里的颜色-->
+    <color name="base_search">#666666</color>
+
+    <!--金融通统一用色-->
+    <color name="base_QA">#6ea3ff</color>
+    <color name="base_QW">#fea646</color>
+    <color name="base_ED">#59cbf4</color>
+    <color name="base_RF">#ec6d7a</color>
+    <color name="base_TG">#62d5ba</color>
+    <!--OA用色-->
+    <!--红包用色，60%，80%透明度-->
+
+    <!-- 中国金融通主色调 -->
+
+    <!-- 中国金融通界面辅助色调 -->
+
+    <!-- 中国金融通界面中性颜色 -->
+    <color name="base_global_neutral_gray_d4d6df">#d4d6df</color>
+    <color name="base_global_neutral_gray_c6c9d4">#c6c9d4</color>
+
+    <!-- 首页背景颜色 -->
+
+
+    <!--引导页背景红色-->
+    <!--引导页二方格深色线颜色-->
+    <!--引导页二折线浅色线颜色-->
+    <!--引导页圆圈颜色-->
+    <!--引导页连线颜色-->
+
+
+    <!-- Common -->
+
+
+    <color name="base_black_normal">#555555</color>
+    <color name="base_bg_white">#FAFAFA</color>
+    <color name="base_text_unslected">#dd444444</color>
+    <!-- 灰色 -->
+    <!--base==end-->
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="base_error_gif">长宽不小于 %1$dpx，且大小不超过 %2$sM。</string>
+    <string name="base_pull_to_refresh_pull_label" translatable="false">下拉刷新</string>
+    <string name="base_pull_to_refresh_release_label" translatable="false">松开刷新</string>
+    <string name="base_pull_to_refresh_refreshing_label" translatable="false">刷新中…</string>
+    <string name="base_pull_refresh_success">刷新成功</string>
+    <string name="base_imageview_description">imageview</string>
+    <!-- 正在加载…-->
+    <!-- 新闻 -->
+
+</resources>

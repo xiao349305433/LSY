@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="base_utils_md_dialog_title_height">64dp</dimen>
+    <dimen name="base_utils_md_dialog_title_imageview_height">56dp</dimen>
+    <dimen name="base_utils_md_dialog_title_imageview_margin_left">8dp</dimen>
+    <dimen name="base_utils_md_dialog_title_imageview_margin_right">8dp</dimen>
+    <dimen name="base_utils_md_dialog_title_textview_padding">16dp</dimen>
+    <dimen name="base_utils_md_dialog_title_button_margin_right">8dp</dimen>
+    <dimen name="base_utils_md_dialog_buttons_height">64dp</dimen>
+    <dimen name="base_utils_md_dialog_bottom_button_padding">8dp</dimen>
+    <dimen name="base_utils_md_dialog_bottom_button_textsize">16dp</dimen>
+    <dimen name="base_utils_md_dialog_margin">12dp</dimen>
+
+    <color name="base_utils_md_dialog_divider_dark">#66999999</color>
+
+    <style name="base_utils_dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:divider">@color/base_utils_line_border</item>
+    </style>
+</resources>

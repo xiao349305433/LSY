@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#f0f4f7"
+        android:orientation="vertical">
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            app:rv_backgroundColor="@color/base_white"
+            android:layout_gravity="center_horizontal"
+            android:elevation="5dp"
+            app:rv_cornerRadius="5dp">
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_marginLeft="5dp"
+                app:rv_backgroundColor="#f0f4f7"
+                app:rv_cornerRadius="5dp">
+
+                <EditText
+                    android:id="@+id/edit_new_sn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="请选择或手动输入新sn" />
+            </com.flyco.roundview.RoundLinearLayout>
+
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/button_new_sn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="选择新sn"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/l_five_Q"
+                android:layout_marginLeft="10dp"
+                app:rv_cornerRadius="2dp"
+                app:rv_strokeColor="@color/l_five_Q"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                app:rv_strokeWidth="1dp" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/button_saomiao_new_sn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:text="扫描"
+                android:textColor="@color/l_five_Q"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                app:rv_cornerRadius="2dp"
+                app:rv_strokeColor="@color/l_five_Q"
+                app:rv_strokeWidth="1dp" />
+
+        </com.flyco.roundview.RoundLinearLayout>
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            app:rv_backgroundColor="@color/base_white"
+            android:layout_gravity="center_horizontal"
+            android:elevation="5dp"
+            app:rv_cornerRadius="5dp">
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_marginLeft="5dp"
+                app:rv_backgroundColor="#f0f4f7"
+                app:rv_cornerRadius="5dp">
+
+                <EditText
+                    android:id="@+id/edit_old_sn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="请选择或手动输入旧sn" />
+            </com.flyco.roundview.RoundLinearLayout>
+
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/button_old_sn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="选择旧sn"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/l_five_Q"
+                android:layout_marginLeft="10dp"
+                app:rv_cornerRadius="2dp"
+                app:rv_strokeColor="@color/l_five_Q"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                app:rv_strokeWidth="1dp" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/button_saomiao_old_sn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:text="扫描"
+                android:textColor="@color/l_five_Q"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                app:rv_cornerRadius="2dp"
+                app:rv_strokeColor="@color/l_five_Q"
+                app:rv_strokeWidth="1dp" />
+
+        </com.flyco.roundview.RoundLinearLayout>
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            app:rv_backgroundColor="@color/base_white"
+            app:rv_cornerRadius="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="请在下方选择旧设备的产品形式:" />
+            <met.hx.com.librarybase.views.MyRadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/base_white"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_dan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="远传表号接入" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/base_white"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_duo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="远传物联网端" />
+                </LinearLayout>
+            </met.hx.com.librarybase.views.MyRadioGroup>
+        </com.flyco.roundview.RoundLinearLayout>
+        <com.flyco.roundview.RoundLinearLayout
+            android:id="@+id/round_dushu"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            app:rv_backgroundColor="@color/base_white"
+            app:rv_cornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="旧设备机械读数(m³)："
+                    android:textSize="16sp"/>
+
+                <com.flyco.roundview.RoundLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="3dp"
+                    android:textColor="@color/base_H"
+                    app:rv_backgroundColor="#f0f4f7"
+                    app:rv_cornerRadius="5dp">
+
+                    <EditText
+                        android:id="@+id/edit_old_dushu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:hint="输入旧设备机械读数" />
+                </com.flyco.roundview.RoundLinearLayout>
+            </LinearLayout>
+        </com.flyco.roundview.RoundLinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/button_next"
+                android:layout_width="126dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_height="30dp"
+                app:rv_backgroundColor="@color/l_five_Q"
+                android:textColor="@color/base_white"
+                app:rv_cornerRadius="12sp"
+                android:text="下一步" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

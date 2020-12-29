@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.test1moudle">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity android:name="com.test1moudle.v.activity.TestPlayer"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+
+            />
+        <activity android:name="com.test1moudle.v.views.TestViewPager"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+
+            />
+        <activity android:name="com.test1moudle.v.activity.HPlayerPActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+
+            />
+        <activity android:name="com.test1moudle.v.activity.PlayerPActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+
+            />
+        <activity android:name="com.test1moudle.v.activity.OriginPlayerPActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+
+            />
+    </application>
+
+</manifest>

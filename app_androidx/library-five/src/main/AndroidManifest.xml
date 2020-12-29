@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wu.loushanyun.com.libraryfive">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application android:theme="@style/BaseAppTheme.NoActionBar">
+        <meta-data
+            android:name="com.tianditu.apikey"
+            android:value="02d813097ac672cf9ec7025f81450fc9" />
+        <activity
+            android:name="com.mining.app.zxing.qr_codescan.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".BlueNameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+    </application>
+
+</manifest>

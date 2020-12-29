@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f4f7"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/item0"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:visibility="gone"
+                android:onClick="onClick"
+                android:paddingEnd="0dp"
+                android:paddingStart="15dp">
+
+                <ImageView
+                    android:id="@+id/icon0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/jzsb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon0"
+                    android:text="检测识别"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/logo0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/jz" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/logo0"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/go" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/item1"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:paddingEnd="0dp"
+                android:paddingStart="15dp">
+
+                <ImageView
+                    android:id="@+id/icon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/m01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon1"
+                    android:paddingBottom="20dp"
+                    android:text="娄山云1号模组"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/icon1"
+                    android:paddingTop="20dp"
+                    android:text="LSY-M01(固件版本1.06以下)"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/logo1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/l_loushanyun_lsy_1" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/logo1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/go" />
+
+                <TextView
+                    android:id="@+id/item1_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/logo1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/icon1"
+                    android:onClick="onClick"
+                    android:visibility="gone"
+                    android:paddingBottom="10dp"
+                    android:text="娄山云1号模组协议管理"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/item1_1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:paddingEnd="0dp"
+                android:paddingStart="15dp">
+
+                <ImageView
+                    android:id="@+id/icon1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/m01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon1_1"
+                    android:paddingBottom="20dp"
+                    android:text="娄山云1号模组"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/icon1_1"
+                    android:paddingTop="20dp"
+                    android:text="LSY-M01(固件版本1.07以上)"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/logo1_1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/l_loushanyun_lsy_1" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/logo1_1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/go" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/item2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:paddingEnd="0dp"
+                android:paddingStart="15dp">
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/m02" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon2"
+                    android:paddingBottom="20dp"
+                    android:text="娄山云2号模组"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon2"
+                    android:paddingTop="20dp"
+                    android:text="LSY-M02"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/logo2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/l_loushanyun_lsy_2" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/logo2"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/go" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/item3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:paddingEnd="0dp"
+                android:paddingStart="15dp">
+
+                <ImageView
+                    android:id="@+id/icon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/m03" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon3"
+                    android:paddingBottom="20dp"
+                    android:text="娄山云3号模组"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon3"
+                    android:paddingTop="20dp"
+                    android:text="LSY-M03(请把抄表盒子升级为最新)"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/logo3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/l_loushanyun_lsy_3" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/logo3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/go" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/item4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:paddingEnd="0dp"
+                android:paddingStart="15dp"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/icon4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/m04"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon4"
+                    android:paddingBottom="20dp"
+                    android:text="娄山云4号模组"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon4"
+                    android:paddingTop="20dp"
+                    android:text="LSY-M04"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/logo4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/lsy_m04" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/logo4"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/go" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/item4_simu"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:paddingEnd="0dp"
+                android:paddingStart="15dp">
+
+                <ImageView
+                    android:id="@+id/icon4_simu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/m04" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon4_simu"
+                    android:paddingBottom="20dp"
+                    android:text="娄山云4号模组"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon4_simu"
+                    android:paddingTop="20dp"
+                    android:text="LSY-M04"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/logo4_simu"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/lsy_m04" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/logo4_simu"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/go" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

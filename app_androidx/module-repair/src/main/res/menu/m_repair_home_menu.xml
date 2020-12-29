@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ic_main_fujing"
+        android:icon="@drawable/m_repair_bluetooth_searching_black_24dp"
+        app:showAsAction="always"
+        android:title="附近蓝牙" />
+    <!--<item-->
+        <!--android:id="@+id/ic_main_cloud"-->
+        <!--android:icon="@drawable/m_repair_cloud_upload_write_24dp"-->
+        <!--app:showAsAction="always"-->
+        <!--android:title="上传列表" />-->
+    <!--<item-->
+        <!--android:id="@+id/ic_main_saomiao"-->
+        <!--android:icon="@drawable/m_repair_crop_free_black_24dp"-->
+        <!--app:showAsAction="always"-->
+        <!--android:title="扫描" />-->
+    <!--<item-->
+        <!--android:id="@+id/ic_main_shaixuan"-->
+        <!--android:icon="@drawable/m_repair_create_new_folder_black_24dp"-->
+        <!--android:title="筛选新设备" />-->
+    <!--<item-->
+        <!--android:id="@+id/ic_main_liebiao"-->
+        <!--android:icon="@drawable/m_repair_collections_black_24dp"-->
+        <!--android:title="新设备列表" />-->
+</menu>

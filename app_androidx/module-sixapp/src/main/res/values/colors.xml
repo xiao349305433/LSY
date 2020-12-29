@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="yellew_bg">#E2D9C7</color>
+    <color name="yellew_fix">#EBE7DB</color>
+    <color name="blue_bg">#245189</color>
+    <color name="disanfang_bg">#EBE7DB</color>
+    <color name="brown_bg">#DA7F39</color>
+    <color name="wuxian_blue_deep">#4EBEFF</color>
+    <color name="wuxian_blue_light">#91D5FF</color>
+    <color name="home_blue_light">#6183AB</color>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@mipmap/param_zzc1"
+    android:paddingLeft="15dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="基站编号（SN）："
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        ></TextView>
+    <TextView
+        android:id="@+id/pop_sn_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SH15245613651165154G"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/blue_bg"
+        android:layout_marginTop="15dp"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/pop_param_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            ></TextView>
+        <TextView
+            android:id="@+id/pop_param_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            ></TextView>
+        <TextView
+            android:id="@+id/pop_param_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            ></TextView>
+        <TextView
+            android:id="@+id/pop_param_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            ></TextView>
+        <TextView
+            android:id="@+id/pop_param_tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            ></TextView>
+        <TextView
+            android:id="@+id/pop_param_tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            ></TextView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/pop_warn_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="注：参数对比不一致的指标，呈“红色”提醒"
+        android:layout_marginBottom="10dp"
+        ></TextView>
+
+</LinearLayout>

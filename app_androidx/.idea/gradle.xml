@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Tool" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/library-banner" />
+            <option value="$PROJECT_DIR$/library-base" />
+            <option value="$PROJECT_DIR$/library-blue" />
+            <option value="$PROJECT_DIR$/library-five" />
+            <option value="$PROJECT_DIR$/library-loushanyun" />
+            <option value="$PROJECT_DIR$/library-matisse" />
+            <option value="$PROJECT_DIR$/library-printer" />
+            <option value="$PROJECT_DIR$/library-uart" />
+            <option value="$PROJECT_DIR$/library-zxingcore" />
+            <option value="$PROJECT_DIR$/module-chiptest" />
+            <option value="$PROJECT_DIR$/module-fiveapp" />
+            <option value="$PROJECT_DIR$/module-initthree" />
+            <option value="$PROJECT_DIR$/module-inittwo" />
+            <option value="$PROJECT_DIR$/module-jizhan" />
+            <option value="$PROJECT_DIR$/module-moments" />
+            <option value="$PROJECT_DIR$/module-repair" />
+            <option value="$PROJECT_DIR$/module-sixapp" />
+            <option value="$PROJECT_DIR$/module-test" />
+            <option value="$PROJECT_DIR$/module_factory" />
+            <option value="$PROJECT_DIR$/module_sevenapp" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

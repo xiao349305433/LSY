@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.flyco.roundview.RoundLinearLayout
+        android:id="@+id/bluelayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:rv_backgroundColor="@color/base_white"
+        app:rv_cornerRadius="2dp">
+
+        <TextView
+            android:id="@+id/text_dangqian_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前未连接SN设备"
+            android:textColor="?android:attr/textColorLinkInverse" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/bluetooth_conn"
+                android:layout_width="106dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="蓝牙重连"
+                android:textColor="#525252"
+                android:textSize="15sp"
+                app:rv_backgroundColor="#f0f4f7"
+                app:rv_cornerRadius="2dp" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/bluetooth_disconn"
+                android:layout_width="106dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="70dp"
+                android:gravity="center"
+                android:text="蓝牙断开"
+                android:textColor="#525252"
+                app:rv_backgroundColor="#f0f4f7"
+                app:rv_cornerRadius="2dp" />
+        </LinearLayout>
+
+
+    </com.flyco.roundview.RoundLinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/result_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

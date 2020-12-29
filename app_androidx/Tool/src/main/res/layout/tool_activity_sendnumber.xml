@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:textSize="16sp"
+        android:id="@+id/text_leixing"
+        android:text="远传物联网端"
+        android:textColor="@color/l_five_Q"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="90dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/l_five_Q"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_tool_sendNumber"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ec7e2d"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="条命令"
+            android:textColor="@color/l_five_Q"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="90dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="接收"
+            android:textColor="@color/l_five_Q"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_tool_receiveNumber"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ec7e2d"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="条数据"
+            android:textColor="@color/l_five_Q"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_chakan"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/l_five_Q"
+        android:gravity="center"
+        android:text="查看详情"
+        android:textColor="@color/base_white"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.test1moudle">
+
+    <application android:theme="@style/BaseAppTheme.NoActionBar">
+        <activity
+            android:name=".v.activity.TestPlayer"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name=".v.activity.TestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name=".v.activity.TestNetWorkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name=".v.activity.StyleTabActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name=".v.activity.TestTabActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name=".v.activity.TestTopTabActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name=".v.activity.LocationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name=".v.activity.DownLoadActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name=".v.activity.TinyWindowPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name=".v.activity.MainYesPresenterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            ></activity>
+        <activity
+            android:name=".v.activity.RecyclePlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name=".v.activity.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".v.activity.DemoWebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.modulebanner.v.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name="com.modulerefresh.v.activity.RefreshTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name="com.modulerefresh.v.activity.TestRefreshActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.modulerefresh.v.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+    </application>
+
+</manifest>

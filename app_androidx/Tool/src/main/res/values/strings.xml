@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="loginName">用户名</string>
+    <string name="loginPwd">密码</string>
+
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    
+</resources>

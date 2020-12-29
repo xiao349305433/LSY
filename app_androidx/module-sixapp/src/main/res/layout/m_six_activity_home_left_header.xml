@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    android:orientation="vertical"
+    android:background="#245189"
+    >
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="22dp"
+        android:src="@mipmap/ic_more"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        ></ImageView>
+
+
+    <TextView
+        android:id="@+id/head_tv_exit"
+        android:layout_width="75dp"
+        android:layout_height="32dp"
+        android:background="@drawable/drawer_exit_tv_shape"
+        android:gravity="center"
+        android:text="退出登录"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="400dp"
+        android:textColor="@color/white"
+        ></TextView>
+
+
+</LinearLayout>

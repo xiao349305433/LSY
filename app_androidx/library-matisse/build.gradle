@@ -1,0 +1,42 @@
+apply plugin: rootProject.ext.plugins.library
+
+apply plugin: rootProject.ext.plugins.kotlin_android
+apply plugin: rootProject.ext.plugins.kotlin_android_extensions
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        testInstrumentationRunner rootProject.ext.android.testInstrumentationRunner
+        vectorDrawables.useSupportLibrary = true
+        //组件配置
+        buildConfigField 'boolean', 'ISAPP', 'false'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation rootProject.ext.compiles.navigation
+    implementation rootProject.ext.compiles.material
+    implementation rootProject.ext.compiles.androidx
+    testImplementation rootProject.ext.compiles.junit
+    androidTestImplementation rootProject.ext.compiles.runner
+    androidTestImplementation rootProject.ext.compiles.espresso
+    implementation 'it.sephiroth.android.library.imagezoom:library:1.0.4'
+
+    compileOnly 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+}
+

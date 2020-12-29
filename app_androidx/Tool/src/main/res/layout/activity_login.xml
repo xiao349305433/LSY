@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/denglubeijing"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".LoginActivity" >
+    <LinearLayout
+        android:id="@+id/ll_nearEquipment"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+         >
+         <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:background="@drawable/fujin" />
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dip"
+             android:text="附件设备"/>
+         
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_unitbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/zhihuichengshi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+         >
+         
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/qiehuan"
+            android:contentDescription="This is the username view" />
+
+        <ImageButton
+            android:id="@+id/ib_shuiwubg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shuiwuxz"
+            android:contentDescription="This is the username view" />
+        <ImageButton
+            android:id="@+id/ib_kaifazhebg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/chanpinqiye"
+            android:contentDescription="This is the username view" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+        android:background="@null"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/radius"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_margin="5dp"
+                android:background="@drawable/yonghu"
+                android:contentDescription="This is the username view" />
+
+            <EditText
+                android:id="@+id/et_login_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:gravity="left|center"
+                android:hint="@string/loginName"
+                android:singleLine="true"
+                android:textColor="#5c5c5c"
+                android:textColorHint="#dbdbdb"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radius"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_margin="5dp"
+                android:background="@drawable/mima"
+                android:contentDescription="This is the password view" />
+
+            <EditText
+                android:id="@+id/et_login_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="9"
+                android:background="@null"
+                android:gravity="left|center"
+                android:hint="@string/loginPwd"
+                android:inputType="textPassword"
+                android:textColor="#5c5c5c"
+                android:textColorHint="#dbdbdb"
+                android:textSize="16sp" />
+
+            <!--
+                 <CheckBox
+                android:id="@+id/cb_display_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/selector_password" />
+            -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ib_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:contentDescription="This is the login button"
+                android:src="@drawable/dengluanniu" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

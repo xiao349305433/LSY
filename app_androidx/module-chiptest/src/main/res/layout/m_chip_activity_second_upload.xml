@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <com.flyco.roundview.RoundTextView
+                        android:layout_width="155dp"
+                        android:id="@+id/text_saomiao"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:text="扫描二维码质检"
+                        android:gravity="center"
+                        app:rv_backgroundColor="#ccd3e1"
+                        app:rv_cornerRadius="5dp" />
+
+                    <com.flyco.roundview.RoundTextView
+                        android:layout_width="155dp"
+                        android:id="@+id/text_print_coon"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="10dp"
+                        android:text="连接打印机(未连接)"
+                        app:rv_backgroundColor="#ccd3e1"
+                        app:rv_cornerRadius="5dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_blue_tooth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/base_white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="附近蓝牙（持续搜索中）"
+                android:textColor="@color/l_five_Q" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.flyco.roundview.RoundLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    app:rv_backgroundColor="#9dcac9c9"
+                    app:rv_cornerRadius="5dp">
+
+                    <EditText
+                        android:id="@+id/edit_search"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="请输入SN号搜索" />
+                </com.flyco.roundview.RoundLinearLayout>
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/reset_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text="清除"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="@color/l_five_Q"
+                    app:rv_cornerRadius="4dp" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/reset_clear_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text="清除列表"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="@color/l_five_Q"
+                    app:rv_cornerRadius="4dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/base_global_neutral_gray_c6c9d4" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dialog_blue_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </LinearLayout>
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/text_sum"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="20dp"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@color/white"
+            app:rv_backgroundColor="#77f10c16"
+            app:rv_cornerRadius="30dp" />
+    </FrameLayout>
+
+
+</LinearLayout>

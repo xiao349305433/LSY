@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/data_example"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textColor="#7a7a7a"
+        android:gravity="center_horizontal"
+        android:text="aaaaaaaaaa" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0f4f7" />
+
+    <TextView
+        android:id="@+id/data_name"
+        android:layout_width="match_parent"
+        android:textColor="#7a7a7a"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:text="一氧化碳(5)" />
+</LinearLayout>

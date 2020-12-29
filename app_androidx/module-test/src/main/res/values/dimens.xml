@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  Copyright 2017 Zhihu Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<resources>
+    <dimen name="m_test_grid_expected_size">120dp</dimen>
+
+
+    <dimen name="m_test_app_bar_height">240dp</dimen><!--180dp-->
+    <dimen name="m_test_fab_margin">16dp</dimen>
+    <dimen name="m_test_text_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="m_test_activity_horizontal_margin">16dp</dimen>
+    <dimen name="m_test_activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="m_test_division_line">0.5dp</dimen>
+
+    <dimen name="m_test_padding_common">10dp</dimen>
+    <dimen name="m_test_padding_common_h">15dp</dimen>
+    <dimen name="m_test_padding_common_v">10dp</dimen>
+    <dimen name="m_test_padding_common_d">5dp</dimen>
+
+    <dimen name="m_test_textsize_small">12sp</dimen>
+    <dimen name="m_test_textsize_content">14sp</dimen>
+    <dimen name="m_test_textsize_titlesmall">16sp</dimen>
+    <dimen name="m_test_textsize_title">17sp</dimen>
+    <dimen name="m_test_textsize_titlelarge">19sp</dimen>
+    <dimen name="m_test_textsize_titlebar">20sp</dimen>
+
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+</resources>

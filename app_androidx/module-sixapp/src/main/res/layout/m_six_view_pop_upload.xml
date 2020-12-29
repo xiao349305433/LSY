@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@drawable/drawer_pop_next_shape"
+
+    >
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_ytg_right"
+        android:layout_gravity="center_horizontal"
+        ></ImageView>
+    <TextView
+        android:id="@+id/pop_upload_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="信息上传成功"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+
+        >
+
+        <Chronometer
+            android:id="@+id/pop_upload_sure"
+            android:layout_width="140dp"
+            android:layout_height="28dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/blue_bg"
+            android:layout_marginLeft="10dp"
+            ></Chronometer>
+
+    </LinearLayout>
+
+</LinearLayout>

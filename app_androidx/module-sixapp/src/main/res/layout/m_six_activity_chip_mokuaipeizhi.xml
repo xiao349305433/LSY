@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:visibility="visible"
+    >
+
+    <include layout="@layout/base_toolbar" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模块配置参数"
+        ></TextView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="固件版本号："
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:rv_backgroundColor="#F0F4F7"
+                app:rv_cornerRadius="5dp">
+
+                <EditText
+                    android:id="@+id/tu2_edit_SoftWareVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:enabled="false"
+                    android:background="@null"
+                    />
+
+            </com.flyco.roundview.RoundLinearLayout>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提醒：模块一旦断电，需要校准时间"
+        ></TextView>
+    <TextView
+        android:id="@+id/tu3_one_setting"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="校   时"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:background="@color/blue_bg"
+        ></TextView>
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="42dp"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                >-->
+        <!--                <TextView-->
+        <!--                    android:layout_width="130dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="固件版本号："-->
+        <!--                    android:textSize="14sp"-->
+        <!--                    android:layout_marginLeft="10dp"-->
+        <!--                    ></TextView>-->
+
+        <!--                <com.flyco.roundview.RoundLinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="32dp"-->
+        <!--                    android:layout_gravity="center_vertical"-->
+        <!--                    android:layout_marginLeft="5dp"-->
+        <!--                    android:layout_marginRight="5dp"-->
+        <!--                    app:rv_backgroundColor="#F0F4F7"-->
+        <!--                    app:rv_cornerRadius="5dp">-->
+
+        <!--                    <EditText-->
+        <!--                        android:id="@+id/tu2_edit_HardWareVersion"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="32dp"-->
+        <!--                        android:layout_centerVertical="true"-->
+        <!--                        android:enabled="false"-->
+        <!--                        android:background="@null"-->
+        <!--                        />-->
+
+        <!--                </com.flyco.roundview.RoundLinearLayout>-->
+
+        <!--            </LinearLayout>-->
+
+
+</LinearLayout>

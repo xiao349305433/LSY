@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="m_init_meterrates">
+        <item>0.001</item>
+        <item>0.01</item>
+        <item>0.1</item>
+        <item>1</item>
+        <item>10 </item>
+        <item>100</item>
+        <item>1000</item>
+        <item>0.0001</item>
+    </string-array>
+    
+    <string-array name="m_init_status">
+        <item>正常</item>
+        <item>强磁</item>
+        <item>拆卸断线</item>
+        <item>关阀</item>
+        <item>倒流 </item>
+        <item>阀坏</item>
+        <item>欠压</item>
+    </string-array>
+
+    <!-- 倍率 -->
+    <string-array name="m_init_pulseconstant">
+        <item>0.0001</item>
+        <item>0.001</item>
+        <item>0.01</item>
+        <item>0.1</item>
+        <item>1</item>
+        <item>10</item>
+        <item>100</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="m_init_pulseconstant1">
+        <item>0.001</item>
+        <item>0.01</item>
+        <item>0.1</item>
+        <item>1</item>
+        <item>10</item>
+        <item>100</item>
+    </string-array>
+
+    <!-- 扩频因子 -->
+    <string-array name="m_init_kuopinyinzi">
+        <item>SF12</item>
+        <item>SF11</item>
+        <item>SF10</item>
+        <item>SF9</item>
+        <item>SF8</item>
+        <item>SF7</item>
+    </string-array>
+
+    <!-- 信号强度 -->
+    <string-array name="m_init_xinhaoqiangdu">
+        <item>20dbm</item>
+        <item>18dbm</item>
+        <item>16dbm</item>
+    </string-array>
+    <!-- 信道参数 -->
+    <string-array name="m_init_xindaocanshu">
+        <item>模式A</item>
+        <item>模式B</item>
+    </string-array>
+    <!-- 口径 -->
+    <string-array name="m_init_caliber">
+        <item>15mm</item>
+        <item>20mm</item>
+        <item>25mm</item>
+        <item>40mm</item>
+    </string-array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="l_five_white">#ffffff</color>
+    
+    <color name="l_five_result_view">#b0000000</color>
+    <color name="l_five_viewfinder_mask">#60000000</color>
+    <color name="l_five_possible_result_points">#c0ffff00</color>
+
+    <color name="l_five_primary_dark">#0571b4</color>
+    <color name="l_five_status_bar_color">@color/l_five_primary_dark</color>
+    <color name="l_five_Q"> #941e23</color>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_snOld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="sn:"
+        android:textColor="@color/base_R" />
+
+    <TextView
+        android:id="@+id/text_snNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="sn:"
+        android:textColor="@color/base_R" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="蓝牙无法连接(请根据下方步骤排查)"
+        android:textColor="@color/base_R" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="1.请确认手机蓝牙是否开启。" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="1.请确认是否用强磁唤醒设备（方法：用强磁吸引设备贴标签的地方）。" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="2.请查看该设备电源是否供电正常。" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="3.点击附近蓝牙查看是否搜索到指定的蓝牙设备。" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="4.如果上述情况均正常仍然无法搜索到蓝牙设备，请在附近蓝牙中选择更换设备后重连。" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/base_global_neutral_gray_c6c9d4" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/round_genghuan"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="附近蓝牙"
+            android:textColor="@color/base_white"
+            app:rv_backgroundColor="@color/l_five_Q"
+            app:rv_cornerRadius="4dp" />
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/round_chonglian"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="更换重连"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/base_white"
+            app:rv_backgroundColor="@color/l_five_Q"
+            app:rv_cornerRadius="4dp" />
+    </LinearLayout>
+</LinearLayout>

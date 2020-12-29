@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wu.loushanyun.com.jizhanModule">
+
+    <application android:theme="@style/LFiveTheme.NoActionBar">
+        <activity
+            android:name=".BaseLocationMapActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+    </application>
+</manifest>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="天地图"/>
+    <title>天地图－地图API－范例－逆地理编码</title>
+    <style type="text/css">
+        body,html{width:100%;height:100%;margin:0;font-family:"Microsoft YaHei"}#mapDiv{width:100%;height:400px}input,b,p{margin-left:5px;font-size:14px}
+    </style>
+    <script type="text/javascript" src="http://api.tianditu.gov.cn/api?v=4.0&tk=02d813097ac672cf9ec7025f81450fc9"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script>
+        var geocode;
+        var localSearch;
+        function searchResult(result)
+        {
+            if(result.getStatus() == 0)
+            {
+            document.getElementById("addressMsg").innerHTML = "<font style='font-weight:700'>详细地址：</font>"+result.getAddress();
+            //给原生发消息
+            window.WebViewJavascriptBridge.callHandler(
+                'submitFromWeb'
+                , {"address":result.getAddress()}
+                , function(responseData) {
+                    document.getElementById("show").innerHTML = "send get responseData from java, data = " + responseData
+                }
+            );
+            }
+            else
+            {
+                document.getElementById("addressMsg").innerHTML = "<font style='font-weight:700'>服务器返回状态：</font>"+result.getStatus();
+                document.getElementById("detailedAddress").innerHTML = "<font style='font-weight:700'>服务器返回响应信息：</font>"+result.getMsg();
+            }
+        }
+       function connectWebViewJavascriptBridge(callback) {
+            if (window.WebViewJavascriptBridge) {
+                callback(WebViewJavascriptBridge)
+            } else {
+                document.addEventListener(
+                    'WebViewJavascriptBridgeReady'
+                    , function() {
+                        callback(WebViewJavascriptBridge)
+                    },
+                    false
+                );
+            }
+        }
+        connectWebViewJavascriptBridge(function(bridge) {
+            bridge.init(function(message, responseCallback) {
+                console.log('JS got a message', message);
+            });
+
+            //监听原生发来的消息{"Lng":116.40969,"Lat":39.89945}
+            bridge.registerHandler("functionInJs", function(data, responseCallback) {
+                   	<!--var data2 = $.parseJSON(data);-->
+                   	<!--alert(data2+","+data2.Key+");-->
+                      <!--localSearch=new LocalSearch();-->
+                      <!--localSearch.search(data2.Key,searchResult);-->
+				var data2 = $.parseJSON(data);
+				alert(data2+","+data2.Lng+","+data2.Lat);
+            	geocode = new T.Geocoder();
+                geocode.getLocation(T.LngLat(data2.Lng,data2.Lat),searchResult);
+            });
+        })
+
+
+    </script>
+</head>
+<body>
+<div>
+    <div id="addressMsg" style="font-size:14px"></div>
+</div>
+</body>
+</html>

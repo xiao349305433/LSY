@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="64dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="基本参数"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                ></TextView>
+            <TextView
+                android:id="@+id/jizhongqi_tv1"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff525252"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生产标准"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                ></TextView>
+            <TextView
+                android:id="@+id/jizhongqi_tv2"
+                android:layout_width="215dp"
+                android:layout_height="351dp"
+                android:textColor="#ff525252"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

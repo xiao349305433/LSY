@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/linear"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="XXXXXXXXXXX"
+            android:textColor="#7b7b7b"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:singleLine="true" />
+        <TextView
+            android:id="@+id/biaohao"
+            android:text="XXXXXXXXXXX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#7b7b7b"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/oldId"
+            android:text="XXXXXXXXXXX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:textColor="#7b7b7b"
+            android:textSize="15sp"
+            android:singleLine="true" />
+        <TextView
+            android:id="@+id/newId"
+            android:text="XXXXXXXXXXX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:textColor="#7b7b7b"
+            android:textSize="15sp"
+            android:singleLine="true" />
+
+
+        <TextView
+            android:id="@+id/time"
+            android:text="XXXXXXXXXXX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#7b7b7b"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/upload"
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@color/l_five_Q"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="上传"
+        android:textColor="@color/base_white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/upload"
+        android:layout_marginRight="10dp"
+        android:background="#f0f4f7"
+        android:gravity="center"
+        android:text="删除"
+        android:textSize="15sp" />
+    <View
+        android:background="@color/l_five_Q"
+        android:layout_below="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+</RelativeLayout>

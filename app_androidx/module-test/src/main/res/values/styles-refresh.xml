@@ -1,0 +1,199 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MTestAppThemeBase" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/m_test_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/m_test_colorPrimaryDark</item>
+        <item name="colorAccent">@color/m_test_colorAccent</item>
+        <item name="android:divider">@drawable/m_test_list_divider</item>
+        <item name="android:dividerHeight">@dimen/m_test_division_line</item>
+        <item name="android:listDivider">@drawable/m_test_list_divider</item>
+        <item name="android:homeAsUpIndicator">@drawable/m_test_arrow_back_white_24dp</item>
+    </style>
+
+
+    <style name="MTestAppTheme" parent="MTestAppThemeBase">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MTestAppTheme.TranslucentStatus" />
+
+    <style name="MTestAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MTestAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="MTestAppTheme.Toolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="MTestAppTheme.Toolbar.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+
+    <style name="MTestAppTheme.Divison">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/m_test_division_line</item>
+        <item name="android:dividerHeight">@dimen/m_test_division_line</item>
+        <item name="android:divider">@color/m_test_colorDivison</item>
+        <item name="android:background">@color/m_test_colorDivison</item>
+    </style>
+
+    <style name="MTestAppTheme.Divison.Middle">
+        <item name="android:layout_marginLeft">@dimen/m_test_padding_common</item>
+        <!--<item name="android:layout_marginStart">@dimen/m_refresh_padding_common</item>-->
+    </style>
+
+
+    <style name="MTestAppTheme.Label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/m_test_textsize_content</item>
+        <item name="android:textColor">@color/m_test_colorTextContent</item>
+    </style>
+
+    <style name="MTestAppTheme.Label.Layout">
+        <item name="android:paddingTop">@dimen/m_test_padding_common_v</item>
+        <item name="android:paddingBottom">@dimen/m_test_padding_common_v</item>
+        <item name="android:paddingLeft">@dimen/m_test_padding_common_h</item>
+        <item name="android:paddingRight">@dimen/m_test_padding_common_h</item>
+    </style>
+
+    <style name="MTestAppTheme.Label.Title">
+        <item name="android:textColor">@color/m_test_colorTextTitle</item>
+        <item name="android:textSize">@dimen/m_test_textsize_title</item>
+    </style>
+
+    <style name="MTestAppTheme.Label.Title.Large">
+        <item name="android:textSize">@dimen/m_test_textsize_titlelarge</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MTestAppTheme.Label.Title.Small">
+        <item name="android:textSize">@dimen/m_test_textsize_titlesmall</item>
+    </style>
+
+    <style name="MTestAppTheme.Label.Small">
+        <item name="android:textSize">@dimen/m_test_textsize_small</item>
+    </style>
+
+    <style name="MTestAppTheme.Label.Discription">
+        <item name="android:gravity">top</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/m_test_textsize_content</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="MTestAppTheme.Label.Assistant">
+        <item name="android:textColor">@color/m_test_colorTextAssistant</item>
+        <item name="android:textSize">@dimen/m_test_textsize_content</item>
+    </style>
+
+    <style name="MTestAppTheme.ArrowRight">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">end|right|center_vertical</item>
+        <item name="android:background">@drawable/m_test_chevron_right</item>
+    </style>
+
+    <style name="MTestAppTheme.ArrowRight.Gray">
+        <item name="android:background">@drawable/m_test_chevron_right_gray</item>
+    </style>
+
+    <style name="MTestAppTheme.CommonBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MTestAppTheme.CommonBar.Panel">
+        <!--<item name="android:paddingTop">@dimen/m_test_division_line</item>-->
+        <!--<item name="android:paddingBottom">@dimen/m_test_division_line</item>-->
+        <item name="android:layout_marginTop">@dimen/m_test_padding_common</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/m_test_background_panel</item>
+    </style>
+
+    <style name="MTestAppTheme.CommonBar.PanelLayout">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/m_test_padding_common</item>
+        <item name="android:background">@color/m_test_colorBackgroudDark</item>
+    </style>
+
+    <style name="MTestAppTheme.CommonBar.Bar">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">@dimen/m_test_padding_common</item>
+        <item name="android:paddingRight">@dimen/m_test_padding_common</item>
+        <!--<item name="android:paddingTop">@dimen/m_refresh_padding_common_d</item>-->
+        <!--<item name="android:paddingBottom">@dimen/m_refresh_padding_common_d</item>-->
+
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <!--<item name="android:background">@drawable/af_selector_background_white</item>-->
+    </style>
+
+    <style name="MTestAppTheme.CommonBar.Bar.Header">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">@dimen/m_test_padding_common</item>
+        <item name="android:paddingRight">@dimen/m_test_padding_common</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="MTestAppTheme.CommonBar.Bar.Alone">
+        <item name="android:layout_marginTop">@dimen/m_test_padding_common</item>
+        <item name="android:background">@drawable/m_test_background_panel</item>
+    </style>
+
+    <style name="MTestAppTheme.CommonBar.Content" parent="MTestAppTheme.Label">
+        <item name="android:singleLine">false</item>
+        <!--<item name="android:layout_margin">@dimen/m_refresh_padding_common_d</item>-->
+        <item name="android:gravity">center_vertical</item>
+        <!--<item name="android:paddingTop">2dp</item>-->
+        <!--<item name="android:paddingBottom">2dp</item>-->
+        <!--<item name="android:paddingLeft">@dimen/m_refresh_padding_common_d</item>-->
+        <!--<item name="android:paddingRight">@dimen/m_refresh_padding_common</item>-->
+        <item name="android:paddingTop">@dimen/m_test_padding_common</item>
+        <item name="android:paddingBottom">@dimen/m_test_padding_common</item>
+        <item name="android:paddingLeft">@dimen/m_test_padding_common_d</item>
+        <item name="android:paddingRight">@dimen/m_test_padding_common_d</item>
+        <item name="android:drawablePadding">@dimen/m_test_padding_common</item>
+    </style>
+
+    <style name="MTestAppTheme.CommonBar.Content.Value">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MTestAppTheme.CommonBar.Value" parent="MTestAppTheme.Label.Discription">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/m_test_colorTextAssistant</item>
+        <item name="android:gravity">right|end</item>
+        <item name="android:paddingTop">@dimen/m_test_padding_common</item>
+        <item name="android:paddingBottom">@dimen/m_test_padding_common</item>
+        <item name="android:paddingLeft">@dimen/m_test_padding_common_h</item>
+        <item name="android:paddingRight">@dimen/m_test_padding_common_d</item>
+        <item name="android:drawablePadding">@dimen/m_test_padding_common</item>
+        <!--<item name="android:layout_marginEnd">@dimen/m_refresh_padding_common_d</item>-->
+        <item name="android:layout_gravity">center_vertical|end</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+</resources>

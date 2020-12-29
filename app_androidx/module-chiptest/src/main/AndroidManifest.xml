@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="wu.loushanyun.com.modulechiptest"
+    android:versionCode="10"
+    android:versionName="1.09">
+
+    <application
+        android:name=".init.MainApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/base_chip_photo"
+        android:label="@string/m_chip_app_name"
+        android:largeHeap="true"
+        android:theme="@style/MChipTheme.NoActionBarNoTrans"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label,android:theme">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".v.activity.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.LoginActivityPhone"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".v.activity.SecondTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.NewSecondTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.NewSecondTestActivity1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.FirstTestActivity1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.FirstTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.ToolTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.ThirdTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.ATTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.ATSettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.ThirdTestActivity_0X60"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.SecondUploadInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.FirstJiZhongQiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.SnPrintListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.FourTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.FourTestActivity1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.TTLTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.JiZhongQiProductTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.SnPrintListActivity1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.FourDiBanActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.FourTestSimulationDataActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.FirstProduceATestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.ThirdProduceTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".v.activity.CheckActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.OrderDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.ProduceHomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.FourSimuProduceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.CheckSecondActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.CheckFirstActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.CheckFirst_jizhongqiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.CheckThirdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".v.activity.LorawanActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="wu.loushanyun.com.modulechiptest.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/base_fileprovider_mattise" />
+        </provider>
+    </application>
+
+</manifest>

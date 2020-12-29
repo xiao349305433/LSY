@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+   <!--  <style name="title_color"><item name="android:background">#00a0ea</item></style> -->
+    <style name="main_title"><item name="android:background">@drawable/banner</item></style>
+
+
+    <style name="contentUnionSN">
+        <item name="android:text">物联SN</item>
+        <item name="android:textColor">#1f1f1f</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="softwareVersion">
+        <item name="android:text">软件版本</item>
+        <item name="android:textColor">#1f1f1f</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+     <style name="hardwareVersion">
+        <item name="android:text">硬件版本</item>
+        <item name="android:textColor">#1f1f1f</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="PlayingTime">
+        <item name="android:text">出厂时间</item>
+        <item name="android:textColor">#1f1f1f</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

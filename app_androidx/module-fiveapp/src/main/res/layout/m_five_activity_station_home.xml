@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/station_bj"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <com.flyco.roundview.RoundRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        app:rv_backgroundColor="@color/base_white">
+
+        <TextView
+            android:id="@+id/tv_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="基站总数:"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/tv_sum"
+            android:paddingLeft="10dp"
+            android:textColor="@color/l_five_Q" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/tv_sum"
+            android:padding="10dp"
+            android:src="@drawable/jizhan" />
+    </com.flyco.roundview.RoundRelativeLayout>
+
+    <com.flyco.roundview.RoundFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        app:rv_backgroundColor="@color/base_white">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView style="@style/m_five_station_grid_tv" />
+
+                <TextView
+                    style="@style/m_five_station_grid_tv"
+                    android:text="数量" />
+
+                <TextView
+                    style="@style/m_five_station_grid_tv"
+                    android:text="离线" />
+
+                <TextView
+                    style="@style/m_five_station_grid_tv"
+                    android:text="以太网在线" />
+
+                <TextView
+                    style="@style/m_five_station_grid_tv"
+                    android:text="3G网在线"
+                    android:textColor="@color/l_five_Q" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/m_five_station_grid_tv"
+                    android:gravity="left"
+                    android:text="模式A" />
+
+                <TextView
+                    android:id="@+id/numA"
+                    style="@style/m_five_station_grid_tv" />
+
+                <TextView
+                    android:id="@+id/lixianA"
+                    style="@style/m_five_station_grid_tv" />
+
+                <TextView
+                    android:id="@+id/yitaiwangA"
+                    style="@style/m_five_station_grid_tv"/>
+
+                <TextView
+                    android:id="@+id/sangiA"
+                    style="@style/m_five_station_grid_tv"
+                    android:textColor="@color/l_five_Q" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/m_five_station_grid_tv"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="模式B" />
+
+                <TextView
+                    android:id="@+id/numB"
+                    style="@style/m_five_station_grid_tv" />
+
+                <TextView
+                    android:id="@+id/lixianB"
+                    style="@style/m_five_station_grid_tv"/>
+
+                <TextView
+                    android:id="@+id/yitaiwangB"
+                    style="@style/m_five_station_grid_tv" />
+
+                <TextView
+                    android:id="@+id/sangiB"
+                    style="@style/m_five_station_grid_tv"
+                    android:textColor="@color/l_five_Q" />
+            </TableRow>
+
+        </TableLayout>
+    </com.flyco.roundview.RoundFrameLayout>
+
+    <LinearLayout style="@style/m_five_station_lv">
+
+        <com.flyco.roundview.RoundRelativeLayout
+            android:id="@+id/jizhandingwei"
+            style="@style/m_five_station_rrl"
+            android:layout_weight="3"
+            app:rv_cornerRadius="2dp"
+            app:rv_backgroundColor="#dfe3e6">
+
+            <ImageView
+                android:id="@+id/iv_station_gps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/tv_station_gps"
+                style="@style/m_five_station_line_tv"
+                android:layout_toRightOf="@id/iv_station_gps"
+                android:text="基站定位" />
+
+            <ImageView style="@style/m_five_station_more_iv" />
+        </com.flyco.roundview.RoundRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/m_five_station_lv">
+
+        <com.flyco.roundview.RoundRelativeLayout
+            android:id="@+id/jizhanyulan"
+            style="@style/m_five_station_rrl"
+            android:layout_weight="2"
+            app:rv_cornerRadius="2dp"
+            app:rv_backgroundColor="#fff">
+
+            <ImageView
+                android:id="@+id/iv_station_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jizhan" />
+
+            <TextView
+                android:id="@+id/tv_station_show"
+                style="@style/m_five_station_line_tv"
+                android:layout_toRightOf="@id/iv_station_show"
+                android:text="基站预览" />
+
+            <ImageView style="@style/m_five_station_more_iv" />
+        </com.flyco.roundview.RoundRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/m_five_station_lv">
+
+        <com.flyco.roundview.RoundRelativeLayout
+            android:id="@+id/shebeiyulan"
+            style="@style/m_five_station_rrl"
+            android:layout_weight="1"
+            app:rv_cornerRadius="2dp"
+            app:rv_backgroundColor="#dfe3e6">
+
+            <ImageView
+                android:id="@+id/iv_device_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yulan" />
+
+            <TextView
+                android:id="@+id/tv_device_show"
+                style="@style/m_five_station_line_tv"
+                android:layout_toRightOf="@id/iv_device_show"
+                android:text="设备预览" />
+
+            <ImageView style="@style/m_five_station_more_iv" />
+        </com.flyco.roundview.RoundRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/m_five_station_lv">
+
+        <com.flyco.roundview.RoundRelativeLayout
+            android:id="@+id/jinribaogao"
+            style="@style/m_five_station_rrl"
+            app:rv_cornerRadius="2dp"
+            app:rv_backgroundColor="#fff">
+
+            <ImageView
+                android:id="@+id/iv_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baogao" />
+
+            <TextView
+                android:id="@+id/tv_report"
+                style="@style/m_five_station_line_tv"
+                android:layout_toRightOf="@id/iv_report"
+                android:text="今日报告" />
+
+            <ImageView style="@style/m_five_station_more_iv" />
+        </com.flyco.roundview.RoundRelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

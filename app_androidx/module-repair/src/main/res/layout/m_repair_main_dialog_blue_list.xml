@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="附近蓝牙（持续搜索中）"
+        android:textColor="@color/l_five_Q"
+        android:layout_height="40dp" />
+    <View
+        android:background="@color/base_global_neutral_gray_c6c9d4"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/dialog_blue_recycle"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+

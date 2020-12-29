@@ -1,0 +1,48 @@
+<resources>
+    <!--这里面写跟整体样式无关的style-->
+
+    <style name="base_ProgressBar_blue" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/base_progressbar_blue</item>
+    </style>
+
+    <style name="base_common_divider_gray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/base_global_neutral_gray_d4d6df</item>
+    </style>
+
+    <style name="base_showPopupAnimation" parent="android:Animation">  <!--name为调用这个style动画的名字，自己设置的-->
+        <item name="android:windowExitAnimation">@anim/base_pop_out</item><!-- 退出动画-->
+        <item name="android:windowEnterAnimation">@anim/base_pop_in</item>
+    </style>
+
+
+    <declare-styleable name="base_CrowdFundingRoundProgressBar">
+        <attr name="base_crowdRoundColor" format="color" />
+        <attr name="base_crowdRoundProgressColor" format="color" />
+        <attr name="base_crowdRoundWidth" format="dimension"></attr>
+        <attr name="base_crowdTextColor" format="color" />
+        <attr name="base_crowdTextSize" format="dimension" />
+        <attr name="base_crowdMaxProgress" format="integer"></attr>
+        <attr name="base_crowdTextIsDisplayable" format="boolean"></attr>
+        <attr name="base_crowdStyle">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <style name="base_TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/base_TabTextAppearance</item>
+    </style>
+
+    <style name="base_TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/home_bg"
+    tools:openDrawer="start">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:id="@+id/Linear_menu"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_change"
+                ></ImageView>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="切换"
+                android:gravity="center"
+                android:textColor="@color/white"
+                ></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/home_logininfo_tv"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="手机号： 13639246856 已经被制造商
+深圳千宝通科技有限公司  合法授权
+工号：123"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            ></TextView>
+
+
+
+
+        <ImageView
+            android:id="@+id/six_home_img_fix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/home_dlb"
+            android:layout_gravity="center_horizontal"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/six_home_img_production"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/home_cph"
+            android:layout_gravity="center_horizontal"
+            ></ImageView>
+
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/batch_linear"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:background="@color/white"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:src="@mipmap/gs_logo"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                ></ImageView>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="批次号"-->
+<!--                android:layout_marginLeft="37dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                ></TextView>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                >-->
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/batch_layout"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    >-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/batch_tv"-->
+<!--                        android:layout_width="75dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="批次号选择"-->
+<!--                        android:textColor="#7CADE5"-->
+<!--                        >-->
+<!--                    </TextView>-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:src="@mipmap/ic_pch"-->
+<!--                        ></ImageView>-->
+
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="#ff6183ac"-->
+<!--                    ></View>-->
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/home_pici_tv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:text="请选择下达的批次号任务，进行生产质检"-->
+<!--            android:textColor="@color/blue_bg"-->
+<!--            android:textSize="14sp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:background="@drawable/drawer_home_tv_shape"-->
+<!--            />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/home_toproduction"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:layout_marginBottom="30dp"-->
+<!--            android:background="@color/home_blue_light"-->
+
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:gravity="center"-->
+<!--                android:text="继续生产质检"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:visibility="visible"></TextView>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:src="@mipmap/home_enter"></ImageView>-->
+
+<!--        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/m_six_activity_home_left_header"
+        app:menu="@menu/m_six_activity_home_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

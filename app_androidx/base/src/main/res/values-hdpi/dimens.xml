@@ -1,0 +1,15 @@
+<resources>
+    <!--通用颜色值字体大小-->
+    <dimen name="base_common_textSize_24px">14dp</dimen>
+    <dimen name="base_common_textSize_26px">15dp</dimen>
+    <dimen name="base_common_textSize_28px">16dp</dimen>
+    <dimen name="base_common_textSize_30px">17dp</dimen>
+    <!--通用距离大小-->
+    <dimen name="base_common_distanceSize_10px">6dp</dimen>
+    <dimen name="base_common_distanceSize_20px">12dp</dimen>
+    <dimen name="base_common_distanceSize_30px">17dp</dimen>
+    <dimen name="base_common_distanceSize_40px">22dp</dimen>
+    <dimen name="base_common_distanceSize_80px">42dp</dimen>
+    <!--财经资讯字体大小-->
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F7"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="90dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="成功接收到"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_totalNumber"
+            android:layout_width="20dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="#ec7e2d"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="130dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="条信息，合格率："
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_percentPass"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="10%"
+            android:textColor="#ec7e2d"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#ffffff">
+
+        <ListView
+            android:id="@+id/detailedInfo_List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:divider="#F0F4F7"
+            android:dividerHeight="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

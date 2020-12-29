@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/base_image_pulltorefresh_circle1"
+    android:pivotX="50%"
+    android:pivotY="50%" />
+
+<!--<animation-list android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    　　<item android:duration="200" android:drawable="@drawable/image_pulltorefresh_circle1" />
+    　　<item android:duration="200" android:drawable="@drawable/image_pulltorefresh_circle2" />
+    　　<item android:duration="200" android:drawable="@drawable/image_pulltorefresh_circle3" />
+    　　<item android:duration="200" android:drawable="@drawable/image_pulltorefresh_circle4" />
+    　　<item android:duration="200" android:drawable="@drawable/image_pulltorefresh_circle5" />
+    　　<item android:duration="200" android:drawable="@drawable/image_pulltorefresh_circle6" />
+</animation-list>-->
+
+

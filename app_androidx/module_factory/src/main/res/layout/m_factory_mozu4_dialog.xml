@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyco.roundview.RoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:rv_cornerRadius="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="请选择需要配置的型号进行操作"
+        android:textColor="@color/base_Q1"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:background="#f0f2f7"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/base_global_neutral_gray_c6c9d4" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/mozu4_normal"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="32dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标准型"
+            android:textSize="15sp"
+            android:textColor="@color/base_H"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:src="@drawable/arrow_right"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6小时上送1次，带反馈1次；电池：ER26500+复合电容；压
+力传感器采样频率：30分钟1次"
+        android:textColor="#b2b3b8"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="6dp"
+        />
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/base_global_neutral_gray_c6c9d4" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/mozu4_high"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="32dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高级型"
+                android:textSize="15sp"
+                android:textColor="@color/base_H"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:src="@drawable/arrow_right"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15分钟上传1次，不带反馈；电池：两节ER34615+复
+合电容；压力传感器采样频率：3分钟1次"
+            android:textColor="#b2b3b8"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="6dp"
+            />
+
+    </LinearLayout>
+</com.flyco.roundview.RoundLinearLayout>

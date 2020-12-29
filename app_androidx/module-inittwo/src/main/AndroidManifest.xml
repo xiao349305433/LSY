@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wu.loushanyun.com.moduletwoinit">
+
+    <application android:theme="@style/LFiveTheme.NoActionBar">
+        <activity
+            android:name=".v.activity.MTwoMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.CreateLocationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.BlueNameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.WuLianListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.WulianwangduanduquActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.OnCloudDeviceListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.OnCloudWuLianListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.OnCloudTwoWulianwangduanInitActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity4.LSY4InitActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity4.LSY4ListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity4.LSY4LocationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.OnCloudWulianwangduanInitActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.OnCloudUpdateLocationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.UpdateLocationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.LSY2LocationDeviceListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.LSY2LocationDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.WulianwangduanInitActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.LSY2InitActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".v.activity.UpdateToCloudActivity" />
+    </application>
+
+</manifest>

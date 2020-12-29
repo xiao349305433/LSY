@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0fef7"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <com.flyco.roundview.RoundLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    app:rv_backgroundColor="#fff"
+                    app:rv_cornerRadius="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_moduleType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="LSY-M01"
+                        android:textColor="#5397fe"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dfe3e6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_config_name"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#333333" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:background="#dfe3e6" />
+
+                        <TextView
+                            android:id="@+id/tv_config_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#757575" />
+                    </LinearLayout>
+                </com.flyco.roundview.RoundLinearLayout>
+
+                <ImageView
+                    android:id="@+id/system_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/l_loushanyun_active_enable" />
+            </FrameLayout>
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                app:rv_backgroundColor="#fff"
+                app:rv_cornerRadius="3dp">
+
+                <TextView
+                    android:id="@+id/tv_moduleName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="远传表号接入（物联网集中器）"
+                    android:textColor="#5397fe"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="信息"
+                    android:textColor="#999999" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dfe3e6" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_config_info_name"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="#dfe3e6" />
+
+                    <TextView
+                        android:id="@+id/tv_config_info_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#757575" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="状态"
+                        android:textColor="#999999" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dfe3e6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_config_status_name"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#333333" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:background="#dfe3e6" />
+
+                        <TextView
+                            android:id="@+id/tv_config_status_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#757575" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.flyco.roundview.RoundLinearLayout>
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:id="@+id/meter_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                app:rv_backgroundColor="#fff"
+                app:rv_cornerRadius="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="表号读取"
+                    android:textColor="#5397fe"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dfe3e6" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/round_text_open"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:gravity="center"
+                        android:text="打开集中器电源"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:visibility="gone"
+                        android:textColor="@color/base_white"
+                        android:textSize="15sp"
+                        app:rv_backgroundColor="@color/base_Q1"
+                        app:rv_cornerRadius="2dp" />
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/round_text_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_marginLeft="30dp"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="关闭集中器电源"
+                        android:textColor="@color/base_white"
+                        android:textSize="15sp"
+                        app:rv_backgroundColor="@color/gray"
+                        app:rv_cornerRadius="2dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/meter_loading_num_start"
+                        android:layout_width="75dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/border_radius_0dp"
+                        android:gravity="center"
+                        android:hint="起始表号"
+                        android:textColor="#999999"
+                        android:inputType="number"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/meter_loading_gap"
+                        android:layout_width="8dp"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/meter_loading_num_start"
+                        android:background="#dfe3e6" />
+
+                    <EditText
+                        android:id="@+id/meter_loading_num_end"
+                        android:layout_width="75dp"
+                        android:layout_height="25dp"
+                        android:layout_toEndOf="@id/meter_loading_gap"
+                        android:background="@drawable/border_radius_0dp"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:hint="结束表号"
+                        android:textColor="#999999"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp" />
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/meter_loading_num_test"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="30dp"
+                        android:gravity="center"
+                        android:text="测试"
+                        android:textColor="#fff"
+                        app:rv_backgroundColor="#5397fe"
+                        app:rv_cornerRadius="3dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#dfe3e6" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/meter_loading_num_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"/>
+            </com.flyco.roundview.RoundLinearLayout>
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:id="@+id/conn_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                app:rv_backgroundColor="#fff"
+                app:rv_cornerRadius="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="基站连接测试"
+                    android:textColor="#5397fe"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dfe3e6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/conn_test_phone_number"
+                        android:layout_width="150dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentStart="true"
+                        android:inputType="phone"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/border_radius_0dp"
+                        android:gravity="center_vertical"
+                        android:hint="请输入手机号"
+                        android:textColor="#999999"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp" />
+
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/conn_test_send"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="30dp"
+                        android:gravity="center"
+                        android:text="发送"
+                        android:textColor="#fff"
+                        app:rv_backgroundColor="#5397fe"
+                        app:rv_cornerRadius="3dp" />
+                </RelativeLayout>
+            </com.flyco.roundview.RoundLinearLayout>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/tv_upload_copy"
+                android:layout_width="250dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:text="上传"
+                android:textColor="@color/base_white"
+                app:rv_backgroundColor="#5397fe"
+                app:rv_cornerRadius="3dp" />
+
+            <RelativeLayout
+                android:id="@+id/control_pane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/tv_bluetooth_conn"
+                    android:layout_width="150dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="蓝牙重连"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="#e45e3b"
+                    app:rv_cornerRadius="3dp" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/tv_upload"
+                    android:layout_width="150dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="上传"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="#5397fe"
+                    app:rv_cornerRadius="3dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

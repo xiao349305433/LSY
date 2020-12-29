@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ic_include"
+        layout="@layout/base_toolbar" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ic_include">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            app:divider="@color/base_utils_md_dialog_divider_dark"
+            app:dividerPadding="10dp">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="登录" />
+
+            <Button
+                android:id="@+id/getenvelop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="获取专项红包" />
+
+            <Button
+                android:id="@+id/merchantJump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="商户搜索" />
+
+            <Button
+                android:id="@+id/merchantMainJump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="商户主页" />
+
+            <Button
+                android:id="@+id/discover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="发现" />
+
+            <Button
+                android:id="@+id/button_coin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="金币测试" />
+
+            <Button
+                android:id="@+id/button_forum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="圈吧测试" />
+
+            <Button
+                android:id="@+id/button_xjb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="现金宝" />
+
+            <Button
+                android:id="@+id/tSchool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="商学院" />
+
+            <Button
+                android:id="@+id/button_crowd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="众筹" />
+
+            <Button
+                android:id="@+id/button_crowd_gongyi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="公益众筹" />
+
+            <Button
+                android:id="@+id/button_meet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="会议" />
+
+            <Button
+                android:id="@+id/button_zt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="移动通信" />
+
+            <Button
+                android:id="@+id/button_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="设置" />
+            <Button
+                android:id="@+id/button_resercher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="金融专家" />
+
+            <Button
+                android:id="@+id/tfutures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="期货" />
+            <Button
+                android:id="@+id/trecharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="钱包充值界面" />
+
+            <Button
+                android:id="@+id/life"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="生活缴费" />
+
+            <Button
+                android:id="@+id/button_envelope"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="红包" />
+
+            <Button
+                android:id="@+id/live"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="直播" />
+
+            <Button
+                android:id="@+id/button_assets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="私募 p2p" />
+            <Button
+                android:id="@+id/button_p2p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="p2p" />
+
+            <Button
+                android:id="@+id/button_fund"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="基金" />
+            <Button
+                android:id="@+id/button_bankcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="银行卡列表" />
+            <Button
+                android:id="@+id/button_circle_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="朋友圈" />
+
+            <Button
+                android:id="@+id/button_netdisk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="网盘" />
+
+            <Button
+                android:id="@+id/button_personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="个人资料" />
+
+            <Button
+                android:id="@+id/button_group_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="圈子资料" />
+
+            <Button
+                android:id="@+id/button_group_chat_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:text="群资料" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

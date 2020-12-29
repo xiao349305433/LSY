@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="match_parent">
+        <com.flyco.roundview.RoundTextView
+            android:text="自定义的title"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rv_cornerRadius="5dp"
+            app:rv_strokeColor="@color/base_colorPrimary"
+            app:rv_strokeWidth="2dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

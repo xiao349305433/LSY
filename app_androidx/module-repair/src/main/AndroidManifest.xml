@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wu.loushanyun.com.modulerepair">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <application android:theme="@style/LFiveTheme.NoActionBar">
+        <activity
+            android:name=".v.activity.MainRepairActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.LocationDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.UploadChangeDataActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.UploadReplaceDataActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.NeighborActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:theme="@style/LFiveTheme.NoActionBarNoTrans" />
+        <activity
+            android:name=".v.activity.ChooseNewEquipmentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:theme="@style/LFiveTheme.NoActionBarNoTrans" />
+        <activity
+            android:name=".v.activity.NeighborDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.FieldDetectionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.ReplaceThreeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:windowSoftInputMode="stateHidden" />
+    </application>
+
+</manifest>

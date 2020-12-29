@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f4f7" >
+
+    <GridView
+        android:id="@+id/gv_base_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#f0f4f7"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="6dp"
+        android:horizontalSpacing="6dp" >
+    </GridView>
+    <!--
+	 GirdView的一些属性：
+		android:numColumns="auto_fit"	列数设置为自动
+		android:columnWidth="90dp"，		每列的宽度，也就是Item的宽度
+		android:stretchMode="columnWidth"	缩放与列宽大小同步
+		android:verticalSpacing="10dp"		垂直边距
+		android:horizontalSpacing="10dp"	水平边距    -->
+
+</FrameLayout>

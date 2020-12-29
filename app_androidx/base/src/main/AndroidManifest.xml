@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="met.hx.com.base">
+
+
+    <application
+        android:theme="@style/BaseAppTheme.NoActionBar"
+        tools:replace="android:theme">
+        <activity
+            android:name="met.hx.com.base.basemvp.v.activity.WebViewYesPresenterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name="met.hx.com.base.base.activity.SingleFragmentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name="met.hx.com.base.base.matisse.CropViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name="met.hx.com.base.base.matisse.FullViewPictureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+
+        <!--配置glide加载https所需要的GlideModule-->
+        <meta-data
+            android:name="met.hx.com.base.base.https.OkHttpProgressGlideModule"
+            android:value="GlideModule" />
+
+        <service android:name="com.amap.api.location.APSService"></service>
+    </application>
+</manifest>

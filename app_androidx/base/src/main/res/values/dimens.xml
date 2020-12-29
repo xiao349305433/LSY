@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- 文字大小规范 base == start-->
+    <dimen name="base_global_text_size_30px">17dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--base == end-->
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:text="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_main_1_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/text_num"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerVertical="true"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:text="1号"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:rv_backgroundColor="#fb7b32e7"
+                app:rv_cornerRadius="30dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_sn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    text:text="ID:213123123123123123" />
+
+                <TextView
+                    android:id="@+id/text_isupdata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    text:text=""
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/text_tishi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/l_loushanyun_Q"
+                    android:visibility="gone"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/text_send"
+                    android:layout_width="54dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="设置"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:elevation="10dp"
+                    app:rv_backgroundColor="#fb7b32e7" />
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/text_updata"
+                    android:layout_width="54dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="上传"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:elevation="10dp"
+                    app:rv_backgroundColor="@color/l_loushanyun_Q" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

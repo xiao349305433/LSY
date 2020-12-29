@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f4f7"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="50dp"
+            android:orientation="vertical">
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/text_chonglian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="7dp"
+                android:text="点击重新连接蓝牙"
+                android:textColor="@color/base_white"
+                app:rv_backgroundColor="@color/l_five_Q"
+                app:rv_cornerRadius="4dp" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/tv_info_base"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_backgroundColor="#fff"
+                app:rv_cornerRadius="5dp" />
+            <met.hx.com.librarybase.views.MyRadioGroup
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/radio_group"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/base_white"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/radio_button_dan"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="单表连接"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/base_white"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/radio_button_duo"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="多表连接"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:hint="请输入其中一个表号"
+                        android:id="@+id/edit_biaohao"
+                        android:inputType="number"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </met.hx.com.librarybase.views.MyRadioGroup>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.flyco.roundview.RoundLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    app:rv_backgroundColor="#fff"
+                    app:rv_cornerRadius="5dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="25dp"
+                        android:background="#f0f4f7" />
+
+                    <ImageView
+                        android:id="@+id/power_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="7dp"
+                        android:visibility="invisible"
+                        android:src="@drawable/m_repair_undervoltage" />
+                </com.flyco.roundview.RoundLinearLayout>
+
+                <com.flyco.roundview.RoundTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/m_repair_battery"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="8dp"
+                    android:text="电源检测"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="#941e23"
+                    app:rv_cornerRadius="5dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.flyco.roundview.RoundRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingBottom="25dp"
+                    android:paddingTop="32dp"
+                    app:rv_backgroundColor="#fff"
+                    app:rv_cornerRadius="5dp">
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/tv_item1"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="5dp"
+                        android:text="电路连接状态"
+                        android:textColor="#525252"
+                        app:rv_backgroundColor="#f0f4f7"
+                        app:rv_cornerRadius="12dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignStart="@+id/tv_item1"
+                        android:layout_below="@+id/tv_item1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#f0f4f7" />
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/tv_item1"
+                        android:background="#f0f4f7" />
+
+                    <ImageView
+                        android:id="@+id/status1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_item1"
+                        android:layout_alignTop="@+id/tv_item1"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/tv_item1" />
+                </com.flyco.roundview.RoundRelativeLayout>
+
+                <com.flyco.roundview.RoundTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/m_repair_circuit"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="8dp"
+                    android:text="电路检测"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="#941e23"
+                    app:rv_cornerRadius="5dp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:text="设备已正常连接！"
+                android:textColor="#7a7a7a"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/round_duqu"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="重新读取"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="@color/l_five_Q"
+                    app:rv_cornerRadius="4dp" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/round_duquxinxi"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="读取信息"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="@color/l_five_Q"
+                    app:rv_cornerRadius="4dp" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/round_chushihua"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="初始化"
+                    android:textColor="@color/base_white"
+                    app:rv_backgroundColor="@color/l_five_Q"
+                    app:rv_cornerRadius="4dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

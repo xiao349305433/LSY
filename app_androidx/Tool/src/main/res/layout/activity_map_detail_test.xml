@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="3dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="发送数据测试"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:textColor="#000"
+            android:paddingTop="3dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_test_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="点击连接发送按钮发送测试数据"
+            android:background="@drawable/test_textview"
+            android:paddingLeft="3dp"
+            android:textColor="#000"
+            android:textColorHint="#c7edcc"
+            android:paddingTop="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:baselineAligned="false"
+        android:background="@drawable/test_textview"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_send_test"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/test_radius"
+                android:gravity="center"
+                android:text="连 接/发 送" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_send_exit"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/test_radius"
+                android:gravity="center"
+                android:text="返  回" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="注：RSSI>-90、SNR>0为合格场所\n（数值上下波动一点点也属于正常）"
+            android:textSize="14sp"
+            android:background="@drawable/test_textview"
+            android:paddingLeft="3dp"
+            android:gravity="center_vertical"
+            android:textColor="#f00" />
+    </LinearLayout>
+</LinearLayout>

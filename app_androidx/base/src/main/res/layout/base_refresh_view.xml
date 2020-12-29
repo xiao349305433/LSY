@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base_refresh_smartRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnableAutoLoadmore="true"
+    app:srlEnableLoadmoreWhenContentNotFull="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/base_refresh_linear_content_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:overScrollMode="never">
+
+
+            <LinearLayout
+                android:id="@+id/base_refresh_linear_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:overScrollMode="never"/>
+
+            <TextView
+                android:id="@+id/base_refresh_text_empty_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/base_common_distanceSize_30px"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="没有更多数据" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/base_refresh_text_hasno_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/base_white"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/base_common_distanceSize_30px"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:text="暂无数据" />
+    </FrameLayout>
+
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+
+

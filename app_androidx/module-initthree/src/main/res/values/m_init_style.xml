@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="color">
+        <item name="android:background">#fff</item>
+    </style>
+
+
+    <style name="search_connbt">
+        <item name="android:background">@drawable/m_init_blue_search</item>
+    </style>
+    <style name="conn">
+        <item name="android:background">@drawable/m_init_scanner</item>
+    </style>
+
+    <style name="disconn">
+        <item name="android:background">@drawable/m_init_blue_disconn</item>
+    </style>
+
+    <style name="blue_conn">
+        <item name="android:text">扫描连接</item>
+    </style>
+
+    <style name="search_conn">
+        <item name="android:text">搜索连接</item>
+    </style>
+    <style name="blue_disconn">
+        <item name="android:text">断开</item>
+    </style>
+    <style name="blue_state">
+        <item name="android:text">蓝牙状态：</item>
+    </style>
+    <style name="blue_state1">
+        <item name="android:text">蓝牙名称：</item>
+    </style>
+
+    <style name="accept">
+        <item name="android:text">已采集表数:</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="dis_accept">
+        <item name="android:text">未采集表数:</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_utils_colorPrimary">#3F51B5</color>
+    <color name="base_utils_yellow_main">#FD7700</color>
+    <color name="base_utils_indianred">#FF4081</color>
+    <color name="base_utils_trans">#00000000</color>
+    <!-- 空心圆颜色 -->
+    <!-- 空心圆宽 -->
+    <color name="base_utils_line_border">#E2E2E2</color>
+</resources>

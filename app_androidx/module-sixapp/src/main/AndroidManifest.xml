@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="wu.loushanyun.com.sixapp"
+    android:versionCode="19"
+    android:versionName="0.35"
+    >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:name=".init.MainApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/six_logo"
+        android:label="@string/six_app_name"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/LFiveTheme.NoActionBar"
+        tools:replace="android:label,android:theme">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
+        <activity android:name=".v.activity.SixLoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".v.activity.SixJiZhongQiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".v.activity.SixParameterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".v.activity.SixContentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".v.activity.SixDiSanFangActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".v.activity.SixHomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".v.activity.SixYuanChuanActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".v.activity.SixBlueContentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".v.activity.SixWuxianParamActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity android:name=".v.activity.SixChipQianContentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            ></activity>
+
+        <activity android:name=".v.activity.SixFixActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            ></activity>
+
+        <activity android:name=".v.activity.SixLSYWuLianTiaoShiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            ></activity>
+
+        <activity android:name=".v.activity.SixLSYChanPinShuXingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            ></activity>
+
+        <activity android:name=".v.activity.SixLSYMoKuaiPeiZhiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            ></activity>
+
+        <activity android:name=".v.activity.SixLSYXingNengYanZhengActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            ></activity>
+        <activity android:name=".v.activity.SixChipXingNengYanZhengActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            ></activity>
+        <activity android:name=".v.activity.SixChipChanPinShuXingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            ></activity>
+        <activity android:name=".v.activity.SixChipMoKuaiPeiZhiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            ></activity>
+        <activity android:name=".v.activity.SixChipWuLianTiaoShiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            ></activity>
+        <activity android:name=".v.activity.SixFixEnvironmentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            ></activity>
+
+    </application>
+
+</manifest>

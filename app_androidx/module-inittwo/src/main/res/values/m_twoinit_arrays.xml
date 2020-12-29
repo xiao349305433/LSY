@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 扩频因子 -->
+    <string-array name="m_twoinit_kuopinyinzi">
+        <item>SF12</item>
+        <item>SF11</item>
+        <item>SF10</item>
+        <item>SF9</item>
+        <item>SF8</item>
+        <item>SF7</item>
+    </string-array>
+    <!-- 信道参数 -->
+    <string-array name="m_twoinit_xindaocanshu">
+        <item>模式A</item>
+        <item>模式B</item>
+        <item>模式16</item>
+        <item>模式32</item>
+        <item>模式48</item>
+    </string-array>
+    <string-array name="m_twoinit_xinhaoqiangdu">
+        <item>20dbm</item>
+        <item>18dbm</item>
+        <item>16dbm</item>
+    </string-array>
+    <!-- 倍率 -->
+    <string-array name="m_twoinit_pulseconstant">
+        <item>0.001</item>
+        <item>0.01</item>
+        <item>0.1</item>
+        <item>1</item>
+        <item>10</item>
+        <item>100</item>
+    </string-array>
+    <!-- 倍率 -->
+    <string-array name="m_twoinit_caliber">
+        <item>15MM</item>
+        <item>20MM</item>
+        <item>25MM</item>
+        <item>40MM</item>
+        <item>50MM</item>
+    </string-array>
+    <string-array name="m_twoinit_danwei">
+        <item>m³</item>
+        <item>Mpa</item>
+    </string-array>
+</resources>

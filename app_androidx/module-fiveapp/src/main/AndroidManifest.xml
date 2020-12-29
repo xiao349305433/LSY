@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="wu.loushanyun.com.fivemoduleapp"
+    android:versionCode="2"
+    android:versionName="1.06">
+
+    <uses-feature android:name="android.hardware.usb.host" />
+    <application
+        android:name=".init.MainApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/new_logo"
+        android:label="@string/m_five_app_name"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/LFiveTheme.NoActionBar"
+        tools:replace="android:label,android:theme">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="8654718cfcc0d89d57f80fb8dcf67ce4">
+        </meta-data>
+        <activity
+            android:name=".v.activity.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+
+        </activity>
+        <activity
+            android:name=".v.activity.ChooseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".v.activity.LoginActivityPhone"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".v.activity.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/LFiveTheme.NoActionBarNoTrans" />
+        <activity
+            android:name=".v.activity.ForgetPassWordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.NoteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.YuanChenBiaoHaoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.YuanChenBiaoHaoActivity_107"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.NewPassWordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.LocationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.HomeActivity1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.UpLoadDataActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.UpLoadDataInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name=".v.activity.StationHomeActivity" />
+        <activity android:name=".v.activity.StationListActivity" />
+        <activity android:name=".v.activity.BaseLocationMapActivity"></activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="wu.loushanyun.com.fivemoduleapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/base_fileprovider_mattise" />
+        </provider>
+    </application>
+
+</manifest>

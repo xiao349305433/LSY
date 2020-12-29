@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f4f7"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/il_titleView"
+        layout="@layout/base_toolbar" />
+
+    <TextView
+        android:id="@+id/bluetooth_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/il_titleView"
+        android:background="#d2d7db"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="蓝牙设备:未连接"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bluetooth_name"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:background="#dce2e6"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_selector"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:background="#fff0f4f7"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/liuliangji"
+                android:gravity="center_horizontal"
+                android:paddingTop="12dp"
+                android:text="流量计"
+                android:textColor="#ff333333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_general_setting"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fff0f4f7"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/typz"
+                android:gravity="center_horizontal"
+                android:paddingTop="12dp"
+                android:text="通用配置"
+                android:textColor="#ff333333"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_typename"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#fff"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="数字信号"
+                    android:textColor="#5397fe"
+                    android:textSize="14sp" />
+
+                <com.flyco.roundview.RoundLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    app:rv_backgroundColor="@color/base_white"
+                    app:rv_cornerRadius="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:text="信息"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/item_info_line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0f4f7" />
+
+                    <LinearLayout
+                        android:id="@+id/item_info_ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="传感信号"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:id="@+id/item_info_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="RS485"
+                            android:textColor="#757575" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/item_info_line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0f4f7" />
+
+                    <LinearLayout
+                        android:id="@+id/item_info_ll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="发送频率"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:id="@+id/item_info_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="24小时"
+                            android:textColor="#757575" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/item_info_line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0f4f7" />
+
+                    <LinearLayout
+                        android:id="@+id/item_info_ll3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="接入形式"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:id="@+id/item_info_tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="一对多"
+                            android:textColor="#757575" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/item_info_line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0f4f7" />
+
+                    <LinearLayout
+                        android:id="@+id/item_info_ll4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="行业类型"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:id="@+id/item_info_tv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="智慧水务"
+                            android:textColor="#757575" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/item_info_line5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0f4f7" />
+
+                    <LinearLayout
+                        android:id="@+id/item_info_ll5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:onClick="onClick">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="电源类型"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:id="@+id/item_info_tv5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableEnd="@drawable/jt"
+                            android:drawablePadding="10dp"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="物联电池"
+                            android:textColor="#757575" />
+
+                    </LinearLayout>
+
+                </com.flyco.roundview.RoundLinearLayout>
+
+                <com.flyco.roundview.RoundLinearLayout
+                    android:id="@+id/item_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    app:rv_backgroundColor="@color/base_white"
+                    app:rv_cornerRadius="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:text="设置"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/item_setting_line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0f4f7" />
+
+                    <LinearLayout
+                        android:id="@+id/item_setting_ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="产品形式"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:id="@+id/item_setting_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableEnd="@drawable/jt"
+                            android:drawablePadding="10dp"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="第三方表号"
+                            android:textColor="#757575" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/item_setting_line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0f4f7" />
+
+                    <LinearLayout
+                        android:id="@+id/item_setting_ll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="电源类型"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:id="@+id/item_setting_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableEnd="@drawable/jt"
+                            android:drawablePadding="10dp"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="物联电池"
+                            android:textColor="#757575" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/item_setting_line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0f4f7" />
+
+                    <LinearLayout
+                        android:id="@+id/item_setting_ll3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="扩频因子"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:id="@+id/item_setting_tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableEnd="@drawable/jt"
+                            android:drawablePadding="10dp"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="SF9"
+                            android:textColor="#757575" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/item_setting_line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0f4f7" />
+
+                    <LinearLayout
+                        android:id="@+id/item_setting_ll4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="信道参数"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:id="@+id/item_setting_tv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableEnd="@drawable/jt"
+                            android:drawablePadding="10dp"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="模式A"
+                            android:textColor="#757575" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/item_setting_line5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0f4f7" />
+
+                    <LinearLayout
+                        android:id="@+id/item_setting_ll5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="发送功率"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:id="@+id/item_setting_tv5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableEnd="@drawable/jt"
+                            android:drawablePadding="10dp"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="20dbm"
+                            android:textColor="#757575" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/item_setting_line6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0f4f7"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/item_setting_ll6"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="网络交互"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:id="@+id/item_setting_tv6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableEnd="@drawable/jt"
+                            android:drawablePadding="10dp"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="不带网络反馈"
+                            android:textColor="#757575" />
+
+                    </LinearLayout>
+
+                </com.flyco.roundview.RoundLinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="35dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.flyco.roundview.RoundTextView
+                            android:id="@+id/setting"
+                            android:layout_width="75dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="设置"
+                            android:textColor="#fff"
+                            app:rv_backgroundColor="#5397fe"
+                            app:rv_cornerRadius="3dp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.flyco.roundview.RoundTextView
+                            android:id="@+id/loading"
+                            android:layout_width="75dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="读取"
+                            android:textColor="#fff"
+                            app:rv_backgroundColor="#e55e3b"
+                            app:rv_cornerRadius="3dp" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8000"
+        android:clickable="true"
+        android:onClick="onClick">
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:id="@+id/dialog"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:orientation="vertical"
+            app:rv_backgroundColor="@color/base_white"
+            app:rv_cornerRadius="3dp">
+
+            <TextView
+                android:id="@+id/dialog_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="项目名称"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/dialog_item_line0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:background="#f0f4f7" />
+
+            <TextView
+                android:id="@+id/dialog_item_tv0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/blue"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="item0"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/dialog_item_line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:background="#f0f4f7" />
+
+            <TextView
+                android:id="@+id/dialog_item_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/blank"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="item1"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/dialog_item_line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:background="#f0f4f7" />
+
+            <TextView
+                android:id="@+id/dialog_item_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/blank"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="item2"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/dialog_item_line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:background="#f0f4f7" />
+
+            <TextView
+                android:id="@+id/dialog_item_tv3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/blank"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="item3"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+        </com.flyco.roundview.RoundLinearLayout>
+    </FrameLayout>
+</RelativeLayout>

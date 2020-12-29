@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base_blue_linear_blue_tooth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:id="@+id/roundlinear_erweima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                app:rv_backgroundColor="#9dcac9c9"
+                app:rv_cornerRadius="5dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="请扫描二维码查找"
+                    android:textColor="#656566"
+                    android:textSize="16sp" />
+
+
+            </com.flyco.roundview.RoundLinearLayout>
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:id="@+id/relative_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_margin="5dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                app:rv_backgroundColor="#9dcac9c9"
+                app:rv_cornerRadius="5dp">
+
+                <EditText
+                    android:id="@+id/base_blue_edit_search"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="请输入关键字查找"
+                    android:textColor="#000"
+                    android:textColorHint="#656566"
+                    android:textSize="16sp" />
+            </com.flyco.roundview.RoundLinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/base_blue_dialog_blue_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>

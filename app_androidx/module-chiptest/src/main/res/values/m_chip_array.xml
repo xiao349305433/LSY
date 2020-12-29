@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="m_chip_caijichangjin">
+        <item>公用</item>
+        <item>民用</item>
+    </string-array>
+    <string-array name="m_chip_fasongpinlv">
+        <item>30秒</item>
+        <item>60秒</item>
+        <item>5秒</item>
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>60分钟</item>
+        <item>3小时</item>
+        <item>12小时</item>
+        <item>24小时</item>
+        <item> 72小时</item>
+    </string-array>
+    <string-array name="m_chip_xindaocanshu">
+        <item>模式A</item>
+        <item>模式B</item>
+    </string-array>
+    <string-array name="m_chip_chuanganleixing">
+        <item>2EV</item>
+        <item>3EV</item>
+        <item>无磁正反脉冲</item>
+    </string-array>
+    <string-array name="m_chip_xinhaoqiangdu">
+        <item>20dbm</item>
+        <item>18dbm</item>
+        <item>16dbm</item>
+    </string-array>
+    <!-- 倍率 -->
+    <string-array name="m_chip_pulseconstant">
+        <item>0.001</item>
+        <item>0.01</item>
+        <item>0.1</item>
+        <item>1</item>
+        <item>10</item>
+        <item>100</item>
+    </string-array>
+    <!-- 扩频因子 -->
+    <string-array name="m_chip_kuopinyinzi">
+        <item>SF12</item>
+        <item>SF11</item>
+        <item>SF10</item>
+        <item>SF9</item>
+        <item>SF8</item>
+        <item>SF7</item>
+    </string-array>
+    <string-array name="m_chip_wangluojiaohu">
+        <item>带网络反馈</item>
+        <item>不带网络反馈</item>
+    </string-array>
+    <string-array name="m_chip_channel">
+        <item>模式A</item>
+        <item>模式B</item>
+        <item>模式16</item>
+        <item>模式32</item>
+        <item>模式48</item>
+    </string-array>
+</resources>

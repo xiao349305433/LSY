@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative_all"
+    android:background="@color/base_global_neutral_gray_c6c9d4"
+    android:padding="15dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wulian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物联SN：01561117C6AB4B0C"
+            android:textColor="#7a7a7a"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/changjiadaima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="厂家代码："
+            android:textColor="#7a7a7a"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/chuanganxinhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="传感信号：3EV"
+            android:textColor="#7a7a7a"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/chuchangriqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出厂日期：2018-06-19 00:00:00"
+            android:textColor="#7a7a7a"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/beizhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注：某某某某某某某"
+            android:textColor="#7a7a7a"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="50dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#f0f4f7"
+        android:gravity="center"
+        android:text="删除"
+        android:textSize="15sp" />
+
+</RelativeLayout>

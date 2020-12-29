@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:id="@+id/linear_benDi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="2dp"
+                android:orientation="vertical"
+                app:rv_backgroundColor="@color/base_white"
+                app:rv_cornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#E2E3E6"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/text_chushihua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="建网"
+                        android:textColor="@color/l_five_Q" />
+                </LinearLayout>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:background="@color/base_global_neutral_gray_c6c9d4"
+                   android:layout_height="1dp"/>
+
+                <TextView
+                    android:id="@+id/round_text_chushihua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:drawableEnd="@drawable/more"
+                    android:layout_marginRight="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textStyle="bold"
+                    android:text="初始化远传表号寻址总线(LSY-M03)"
+                    android:textSize="15sp" />
+            </com.flyco.roundview.RoundLinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/bd" />
+</FrameLayout>

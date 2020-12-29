@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/relative_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="2dp"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/text_sn"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/l_five_Q"
+                tool:text="哈哈哈哈哈" />
+
+            <TextView
+                android:id="@+id/text_address"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_sn"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="#7b7b7b"
+                android:textSize="15sp"
+                tool:text="哈哈哈哈哈" />
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_address"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="#7b7b7b"
+                android:textSize="15sp"
+                tool:text="哈哈哈哈哈" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="8dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="8dp"
+                android:text="定位"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                app:rv_backgroundColor="@color/l_five_Q"
+                app:rv_cornerRadius="4dp" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+
+                android:paddingTop="8dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="8dp"
+                android:text="删除"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                app:rv_backgroundColor="@color/l_five_Q"
+                app:rv_cornerRadius="4dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

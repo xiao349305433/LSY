@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <Button
+        android:id="@+id/m_test_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定生命周期下载"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <Button
+        android:id="@+id/m_test_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="后台全局下载"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <Button
+        android:id="@+id/m_test_button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="根据url取消下载"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <Button
+        android:id="@+id/m_test_button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="根据code取消下载"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <Button
+        android:id="@+id/m_test_button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消所有下载"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <met.hx.com.librarybase.views.HorizontalProgressBar
+        android:id="@+id/progressBar0"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="20dp" />
+
+    <met.hx.com.librarybase.views.HorizontalProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="20dp" />
+
+    <met.hx.com.librarybase.views.HorizontalProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="20dp" />
+
+    <met.hx.com.librarybase.views.HorizontalProgressBar
+        android:id="@+id/progressBar3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="20dp" />
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

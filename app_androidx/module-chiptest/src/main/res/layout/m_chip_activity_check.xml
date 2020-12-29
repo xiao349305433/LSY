@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <include layout="@layout/base_toolbar" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text_state"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:text="质检状态"
+            android:singleLine="true"
+            android:gravity="center"
+
+            android:layout_centerInParent="true"
+            android:drawableRight="@drawable/m_repair_open"
+            android:drawablePadding="5dp"
+            android:textColor="#878787"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="1px"
+            android:background="@color/base_global_neutral_gray_c6c9d4"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="15dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:text="时间"
+            android:singleLine="true"
+            android:gravity="center"
+
+            android:layout_centerInParent="true"
+            android:drawableRight="@drawable/m_repair_open"
+            android:drawablePadding="5dp"
+            android:textColor="#878787"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="1px"
+            android:background="@color/base_global_neutral_gray_c6c9d4"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="15dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text_mo"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:text="模组类型"
+            android:singleLine="true"
+            android:gravity="center"
+
+            android:layout_centerInParent="true"
+            android:drawableRight="@drawable/m_repair_open"
+            android:drawablePadding="5dp"
+            android:textColor="#878787"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="1px"
+            android:background="@color/base_global_neutral_gray_c6c9d4"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="15dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        >-->
+
+
+<!--        <com.flyco.roundview.RoundLinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:padding="3dp"-->
+<!--            app:rv_backgroundColor="#f0f4f7"-->
+<!--            app:rv_cornerRadius="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            >-->
+<!--            <Spinner-->
+<!--                android:id="@+id/order_select"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="28dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_toRightOf="@+id/xindaocanshu"-->
+<!--                android:gravity="center"-->
+
+<!--                />-->
+<!--        </com.flyco.roundview.RoundLinearLayout>-->
+<!--        <com.flyco.roundview.RoundLinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:padding="3dp"-->
+<!--            app:rv_backgroundColor="#f0f4f7"-->
+<!--            app:rv_cornerRadius="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            >-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/time_select"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="28dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_toRightOf="@+id/xindaocanshu"-->
+<!--                android:gravity="center" />-->
+<!--        </com.flyco.roundview.RoundLinearLayout>-->
+<!--        <com.flyco.roundview.RoundLinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:padding="3dp"-->
+<!--            app:rv_backgroundColor="#f0f4f7"-->
+<!--            app:rv_cornerRadius="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            >-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/choose_select"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="28dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_toRightOf="@+id/xindaocanshu"-->
+<!--                android:gravity="center"-->
+<!--                />-->
+<!--        </com.flyco.roundview.RoundLinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+    <met.hx.com.base.basemvp.v.views.RefreshView
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/order_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+    </met.hx.com.base.basemvp.v.views.RefreshView>
+</LinearLayout>

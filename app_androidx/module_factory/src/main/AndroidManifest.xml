@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.loushanyun.modulefactory"
+    android:versionCode="2"
+    android:versionName="1.07">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:name=".init.MainApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/chuchangpeizhi"
+        android:usesCleartextTraffic="true"
+        android:label="@string/app_name_f_new"
+        android:theme="@style/BaseAppTheme.NoActionBar"
+        tools:replace="android:label,android:theme">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <activity
+            android:name=".v.activity.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".v.activity.BlueNameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.LoginActivityPhone"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.EquipmentListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".v.activity.LSYModule03Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".v.activity.LSYModule01Activity_107"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.LSYModule02Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.LSYModuleNew04Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.Module1ProtocolActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.NewDigitalActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.ReadInfoWlwdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.LSYModuleNew02Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".v.activity.ThirdBusSystemActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name=".v.activity.LSYModule04SimuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.loushanyun.modulefactory.modulechiptest"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/base_fileprovider_mattise" />
+        </provider>
+    </application>
+
+</manifest>

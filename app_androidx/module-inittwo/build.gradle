@@ -1,0 +1,58 @@
+if (IsBuildMudle.toBoolean()) {
+    apply plugin: rootProject.ext.plugins.application
+} else {
+    apply plugin: rootProject.ext.plugins.library
+}
+
+apply plugin: rootProject.ext.plugins.kotlin_android
+apply plugin: rootProject.ext.plugins.kotlin_android_extensions
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        testInstrumentationRunner rootProject.ext.android.testInstrumentationRunner
+        vectorDrawables.useSupportLibrary = true
+        //arouter配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+        //组件配置
+        if (IsBuildMudle.toBoolean()) {
+            buildConfigField 'boolean', 'ISAPP', 'true'
+            multiDexEnabled true
+        } else {
+            buildConfigField 'boolean', 'ISAPP', 'false'
+        }
+    }
+    if (IsBuildMudle.toBoolean()) {
+        dexOptions {//dex配置
+            javaMaxHeapSize "4g"
+            preDexLibraries = false
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    resourcePrefix "m_twoinit_"
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation rootProject.ext.compiles.junit
+    androidTestImplementation rootProject.ext.compiles.runner
+    androidTestImplementation rootProject.ext.compiles.espresso
+    annotationProcessor rootProject.ext.libs.lib_arouter_compiler
+    api project(path: ':library-five')
+}
+

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:layout_marginTop="5dip"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:background="@drawable/huang" />
+
+        <TextView
+            android:id="@+id/tv_device_sn"
+            android:layout_width="180dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center"
+            android:text="12345678ABC"
+            android:textColor="#525252"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="频点："
+            android:textColor="#525252"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_FrequencyPoint_info"
+            android:layout_width="60dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="模式A"
+            android:textColor="#525252"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_gravity="center"
+        android:background="#F0F4F7" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_loraTxPower"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="功率:"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_loraTxPower_info"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="20dBM"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="频段:"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_loraSpectrum_info"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="SE470MHz"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="发送频率："
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_loraSendFrequence_info"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="24h"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_gravity="center"
+        android:background="#F0F4F7" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="SNR:"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_loraSignalRatio_info"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="11.5"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="RSSI:"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_loraSignalStrength_info"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="-50.00"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="扩频:"
+            android:visibility="gone"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_loraSpreadSpectrum_info"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="SF9"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
+

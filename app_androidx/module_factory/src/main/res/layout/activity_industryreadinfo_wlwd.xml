@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f4f7"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_printState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d2d7db"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="打印机未连接" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/tv_mnxh_read_wlwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="模拟信号"
+                    android:textColor="#00a0e9" />
+
+                <ImageView
+                    android:id="@+id/iv_system_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="提示：点击图标可切换激活状态!!!"
+                android:textColor="@color/base_R" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:id="@+id/ll_totalstateInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="电源类型" />
+
+                    <TextView
+                        android:id="@+id/tv_wldc_read"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="物联电池" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="磁场干扰" />
+
+                    <TextView
+                        android:id="@+id/tv_ccgr_read_wlwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="空" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="拆卸" />
+
+                    <TextView
+                        android:id="@+id/tv_cx_read_wlwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="空" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="倒流" />
+
+                    <TextView
+                        android:id="@+id/tv_dl_read_wlwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="空" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="电池状态" />
+
+                    <TextView
+                        android:id="@+id/tv_qy_read_wlwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="正常" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="阀门状态" />
+
+                    <TextView
+                        android:id="@+id/tv_fmzt_read_wlwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="空" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:id="@+id/ll_powerType"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="电源类型" />
+
+                <TextView
+                    android:id="@+id/tv_power_type"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="传感信号" />
+
+                <TextView
+                    android:id="@+id/tv_cgxh_read_wlwd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="发送功率" />
+
+                <TextView
+                    android:id="@+id/tv_fsgl_read_wlwd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="测量方式" />
+
+                <TextView
+                    android:id="@+id/tv_clfs_read_wlwd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6"
+                    android:text="用量" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:id="@+id/ll_maikuang"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="脉宽" />
+
+                <TextView
+                    android:id="@+id/tv_mk_read_wlwd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6"
+                    android:text="200ms" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_changjiabiaoshi"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="厂家标识" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="产品形式" />
+
+                <TextView
+                    android:id="@+id/tv_cpsx_read_wlwd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="厂家标识" />
+
+                <TextView
+                    android:id="@+id/tv_cjbs_read_wlwd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="发送频率" />
+
+                <TextView
+                    android:id="@+id/tv_fspl_read_wlwd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="无线频率" />
+
+                <TextView
+                    android:id="@+id/tv_wxpl_read_wlwd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="扩频因子" />
+
+                <TextView
+                    android:id="@+id/tv_spreadingFactor"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="信道" />
+
+                <TextView
+                    android:id="@+id/tv_channel"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+
+            </LinearLayout>
+
+            <com.flyco.roundview.RoundTextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="读取脉冲"
+                android:id="@+id/round_text_maichong"
+                android:textColor="@color/white"
+                app:rv_backgroundColor="@color/base_Q1"
+                app:rv_cornerRadius="4dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="倍率(m³/ev)/脉冲常数(个/m³)" />
+
+                <TextView
+                    android:id="@+id/tv_multiplying_power"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="脉冲底数(个)/初始值(m³)" />
+
+                <TextView
+                    android:id="@+id/tv_basicNumber"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="信号强度" />
+
+                <TextView
+                    android:id="@+id/tv_RSS"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="信噪比" />
+
+                <TextView
+                    android:id="@+id/tv_SNR"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="其他设置"
+                    android:textColor="#00a0e9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="0dip"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/wuliansn_tubiao" />
+
+                <TextView
+                    style="@style/contentUnionSN"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2.2" />
+
+                <TextView
+                    android:id="@+id/tv_wlsn_read_wlwd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="7"
+                    android:text="123456789" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="0dip"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/chuchangriqi_tubiao" />
+
+                <TextView
+                    style="@style/PlayingTime"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2.2" />
+
+                <TextView
+                    android:id="@+id/tv_time_read_wlwd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="7"
+                    android:text="2017-12-01" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="0dip"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/yingjianbanben_tubiao" />
+
+                <TextView
+                    style="@style/hardwareVersion"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2.2" />
+
+                <TextView
+                    android:id="@+id/tv_yjbb_read_wlwd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="7"
+                    android:text="1.0.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="0dip"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/ruanjianbanben_tubiao" />
+
+                <TextView
+                    style="@style/softwareVersion"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2.2" />
+
+                <TextView
+                    android:id="@+id/tv_rjbb_read_wlwd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="7"
+                    android:text="1.0.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="0dip"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/ruanjianbanben_tubiao" />
+
+                <TextView
+                    style="@style/softwareVersion"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2.2"
+                    android:text="固件版本" />
+
+                <TextView
+                    android:id="@+id/tv_gjbb_read_wlwd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@color/base_white"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="基站连接测试"
+                    android:textColor="#5397fe" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_cellphonenumber"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:hint="请输入手机号" />
+
+                    <TextView
+                        android:id="@+id/text_1"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#5397fe"
+                        android:gravity="center"
+                        android:text="发送"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/tv_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:text="保存并打印"
+                        android:textColor="#ffffff"
+                        app:rv_backgroundColor="#e45e3b"
+                        app:rv_cornerRadius="4dp" />
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/tv_print"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="打印"
+                        android:textColor="#ffffff"
+                        app:rv_backgroundColor="#e45e3b"
+                        app:rv_cornerRadius="4dp" />
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/tv_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="回到主页"
+                        android:textColor="#ffffff"
+                        app:rv_backgroundColor="#e45e3b"
+                        app:rv_cornerRadius="4dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

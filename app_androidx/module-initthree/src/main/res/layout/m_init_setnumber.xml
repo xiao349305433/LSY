@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <TextView 
+            android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="3"
+        	android:gravity="center"
+			android:textSize="16sp"
+			android:text="表号"
+        	/>
+        <EditText 
+            android:id="@+id/bh"
+            android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="6"
+        	android:inputType="number"
+        	android:background="@drawable/m_init_bg_edittext"/>
+        
+        <TextView 
+            android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:gravity="center"
+        	android:text=""
+        	/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <TextView 
+            android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="3"
+        	android:gravity="center"
+			android:textSize="16sp"
+			android:text="ID号:"
+        	
+        	/>
+        <EditText 
+            android:id="@+id/id"
+            android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="6"
+        	android:inputType="number"
+        	android:background="@drawable/m_init_bg_edittext"/>
+        
+        <TextView 
+            android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:gravity="center"
+        	android:text=""
+        	/>
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <TextView 
+            android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="3"
+        	android:gravity="center"
+			android:textSize="16sp"
+			android:text="底数:"
+        	/>
+        <EditText 
+            android:id="@+id/dushu"
+            android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="6"
+        	android:inputType="number"
+        	android:background="@drawable/m_init_bg_edittext"/>
+        
+        <TextView 
+            android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:gravity="center"
+        	android:text=""
+        	/>
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <TextView 
+            android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="3"
+        	android:gravity="center"
+			android:textSize="16sp"
+			android:text="倍率:"
+        	/>
+        <Spinner
+	            android:id="@+id/beil"
+	            android:layout_width="0dip"
+	        	android:layout_height="wrap_content"
+	        	android:layout_weight="6"
+	            android:entries="@array/m_init_meterrates"
+	            android:background="@drawable/m_init_bg_edittext"/>
+        
+        <TextView 
+            android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:gravity="center"
+        	android:text=""
+        	/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <TextView 
+            android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="3"
+        	android:gravity="center"
+			android:textSize="16sp"
+			android:text="状态:"
+        	/>
+         <Spinner
+	            android:id="@+id/status"
+	            android:layout_width="0dip"
+	        	android:layout_height="wrap_content"
+	        	android:layout_weight="6"
+	            android:entries="@array/m_init_status"
+	            android:background="@drawable/m_init_bg_edittext"/>
+        
+        <TextView 
+            android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:gravity="center"
+        	android:text=""
+        	/>
+    </LinearLayout>
+    
+   
+    
+    
+    
+    
+    
+    
+   
+    
+
+</LinearLayout>

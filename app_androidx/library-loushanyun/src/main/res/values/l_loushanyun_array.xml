@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 倍率 -->
+    <string-array name="l_loushanyun_pulseconstant">
+        <item>0.001</item>
+        <item>0.01</item>
+        <item>0.1</item>
+        <item>1</item>
+        <item>10</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="l_loushanyun_xinhaoqiangdu">
+        <item>20dbm</item>
+        <item>18dbm</item>
+        <item>16dbm</item>
+    </string-array>
+    <string-array name="l_loushanyun_chuanganleixing">
+        <item>2EV</item>
+        <item>3EV</item>
+        <item>无磁正反脉冲</item>
+    </string-array>
+    <string-array name="l_loushanyun_kuopinyinzi">
+        <item>SF12</item>
+        <item>SF11</item>
+        <item>SF10</item>
+        <item>SF9</item>
+        <item>SF8</item>
+        <item>SF7</item>
+    </string-array>
+    <string-array name="l_loushanyun_rxdelay">
+        <item>1S</item>
+        <item>2S</item>
+        <item>3S</item>
+        <item>4S</item>
+        <item>5S</item>
+    </string-array>
+    <string-array name="l_loushanyun_lorawan_feedbacktimes">
+        <item>1次</item>
+        <item>2次</item>
+        <item>3次</item>
+    </string-array>
+    <string-array name="l_loushanyun_koujin">
+    <item>15mm</item>
+    <item>12mm</item>
+    <item>10mm</item>
+        <item>8mm</item>
+        <item>5mm</item>
+        <item>无</item>
+    </string-array>
+</resources>

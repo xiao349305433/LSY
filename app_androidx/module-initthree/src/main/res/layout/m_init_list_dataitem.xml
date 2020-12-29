@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout  
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:orientation="horizontal"  
+  android:layout_width="match_parent" 
+  android:layout_height="wrap_content">  
+  
+  
+    <LinearLayout
+		android:orientation="horizontal"  
+		android:layout_width="match_parent"  
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:layout_margin="10dp"
+		>  
+		
+		  <!-- 表号 -->  
+		  <TextView  
+		   android:layout_width="60dp"    
+		   android:layout_height="wrap_content" 
+		   android:id="@+id/biaohao"  
+		  />  
+		  <!-- sn -->  
+		  <TextView  
+		   android:layout_width="110dp"    
+		   android:layout_height="wrap_content" 
+		   android:id="@+id/sn"  
+		  />  
+		  <!-- 读数 -->  
+		  <TextView  
+		   android:layout_width="70dp"    
+		   android:layout_height="wrap_content"  
+		   android:id="@+id/dushu"  
+		  />  
+		  <!-- 状态 -->
+		  <TextView  
+		   android:layout_width="60dp"  
+		   android:layout_height="wrap_content"  
+		   android:id="@+id/zhuangtai"  
+		  />  
+  </LinearLayout>
+</LinearLayout>  

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <include layout="@layout/base_toolbar"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:text="哈哈"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:text="嘎嘎"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <com.test1moudle.v.views.MyViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.test1moudle.v.views.MyViewPager>
+
+    </LinearLayout>
+
